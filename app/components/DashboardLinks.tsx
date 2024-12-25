@@ -8,15 +8,27 @@ import { usePathname } from "next/navigation"
 export const dashboardLinks  = [
     {
         id:0,
-        name:"Dasboard",
+        name:"about me",
         href:"/dashboard",
         icon:HomeIcon,
         
     },
     {
         id:1,
-        name:"Invoices",
-        href:"/dashboard/invoices",
+        name:"my skills",
+        href:"/dashboard/myskills",
+        icon:User2,
+    },
+    {
+        id:2,
+        name:"my projects",
+        href:"/dashboard/projects",
+        icon:User2,
+    },
+    {
+        id:3,
+        name:"contact",
+        href:"/dashboard/contact",
         icon:User2,
     }
 ]

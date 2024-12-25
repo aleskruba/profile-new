@@ -1,16 +1,16 @@
 import { ReactNode } from "react";
 import Link from "next/link";
-import Logo from "@/public/globe.svg"
+import Logo from "@/public/pc.svg"
 import Image from "next/image";
 import { DashboardLinks } from "../components/DashboardLinks";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu, User2 } from "lucide-react";
+import { Menu, User2,Settings } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 
 
-export default async function DashboardLazout({children}:{children : ReactNode}){
+export default async function DashboardLayout({children}:{children : ReactNode}){
     
       return (
         <>
@@ -23,8 +23,8 @@ export default async function DashboardLazout({children}:{children : ReactNode})
                     <Link href="/" className="flex items-center gap-2">
                     
                     <Image src={Logo} alt={Logo}className="size-7"/>
-                    <p className="text-2xl font-bold">
-                        Invoice<span className="text-blue-600">Ales</span>
+                    <p className="text-xl font-bold">
+                        Aleš  <span className="text-blue-600">DevWeb</span> 
                     </p>
                     </Link>
 
@@ -53,43 +53,60 @@ export default async function DashboardLazout({children}:{children : ReactNode})
                                 </Button>
                             </SheetTrigger>
                             <SheetContent side="left">
-                            <SheetTitle>Hi</SheetTitle>
+                            <SheetTitle>    
+                                <div className="flex items-center gap-2">
+                                <Image src={Logo} alt={Logo}className="size-7"/>
+                                     <p className="text-xl font-bold">
+                                    Aleš  <span className="text-blue-600">DevWeb</span> 
+                                    </p>
+                                    </div>
+                            </SheetTitle>
                                 <nav className="grid gap-2 mt-10">
                                     <DashboardLinks/>
                                 </nav>
                             </SheetContent>
                         </Sheet>
+
+                        <div className="flex w-full justify-center md:hidden">
+                        <Link href="/" className="flex items-center gap-2">
+                    
+                            <Image src={Logo} alt={Logo}className="size-7"/>
+                            <p className="text-xl font-bold">
+                                Aleš  <span className="text-blue-600">DevWeb</span> 
+                            </p>
+                            </Link>
+                        </div>
                         <div className="flex items-center ml-auto">
+
+                            
                             <DropdownMenu>
                                 <DropdownMenuTrigger asChild>
                                     <Button className="rounded-full"
                                             variant="outline"
                                              size="icon"   >
-                                        <User2/>
+                                        <Settings/>
                                     </Button>
                                 </DropdownMenuTrigger>
                                 <DropdownMenuContent align="end">
                                     <DropdownMenuLabel>
-                                        My Account
+                                        Settings
                                     </DropdownMenuLabel>
                                         <DropdownMenuSeparator/>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/dashboard">Dashboard</Link>
+                                            <p>Languages</p> 
                                         </DropdownMenuItem>
                                         <DropdownMenuItem asChild>
-                                            <Link href="/invoices">Invoices</Link>
+                                        <p>Theme</p> 
                                         </DropdownMenuItem>
                                         <DropdownMenuSeparator/>
-                                        <DropdownMenuItem asChild>
-                                                    some link
-                                        </DropdownMenuItem>
+                           
                                 </DropdownMenuContent>
                             </DropdownMenu>
 
                         </div>
                     </header>
 
-                    <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+                    <main className=" bg-blue-500 ">
                         {children}
                     </main>
 

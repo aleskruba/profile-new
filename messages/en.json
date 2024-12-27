@@ -1,0 +1,28 @@
+{"NotFoundPage":{
+    "title":"Page Not Found",
+    "text":"We couldn't find the page you're looking for", 
+    "return":"Return home"
+  },
+    "HomePage": {
+      "title": "Welcome to My Portfolio",
+      "welcome1":"Welcome! My name is",
+      "welcome2":"and this is my personal portfolio website. Here, you can explore my technical expertise, discover the projects I've built, and learn more about my journey in the tech world.",
+      "ViewPortfolio": "View Portfolio"
+    },
+      "Links":{
+        "aboutme":"about me",
+        "myskills":"my skills",
+        "myprojects":"my projects",
+        "contact":"contact"
+    },
+    "Settings":{
+       "settings":"Settings",
+       "language":"Language",
+       "theme":"Theme",
+       "cz":"Czech",
+       "en":"English",
+        "dark":"Dark",
+       "light":"Light"
+      }
+  
+    }

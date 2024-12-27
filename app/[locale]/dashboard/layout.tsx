@@ -1,17 +1,31 @@
 import { ReactNode } from "react";
-import Link from "next/link";
+import {Link} from '@/i18n/routing';
 import Logo from "@/public/pc.svg"
 import Image from "next/image";
 import { DashboardLinks } from "../components/DashboardLinks";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Menu, User2,Settings } from "lucide-react";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuGroup,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuPortal,
+    DropdownMenuSeparator,
+    DropdownMenuShortcut,
+    DropdownMenuSub,
+    DropdownMenuSubContent,
+    DropdownMenuSubTrigger,
+    DropdownMenuTrigger,
+  } from "@/components/ui/dropdown-menu"
+import { getTranslations } from 'next-intl/server';
+import DropDownSettingComponents from "../components/DropDownSettingComponents";
 
 
 export default async function DashboardLayout({children}:{children : ReactNode}){
-    
+    const t = await getTranslations('Settings');
       return (
         <>
             <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
@@ -77,31 +91,14 @@ export default async function DashboardLayout({children}:{children : ReactNode})
                             </Link>
                         </div>
                         <div className="flex items-center ml-auto">
-
                             
-                            <DropdownMenu>
-                                <DropdownMenuTrigger asChild>
-                                    <Button className="rounded-full"
-                                            variant="outline"
-                                             size="icon"   >
-                                        <Settings/>
-                                    </Button>
-                                </DropdownMenuTrigger>
-                                <DropdownMenuContent align="end">
-                                    <DropdownMenuLabel>
-                                        Settings
-                                    </DropdownMenuLabel>
-                                        <DropdownMenuSeparator/>
-                                        <DropdownMenuItem asChild>
-                                            <p>Languages</p> 
-                                        </DropdownMenuItem>
-                                        <DropdownMenuItem asChild>
-                                        <p>Theme</p> 
-                                        </DropdownMenuItem>
-                                        <DropdownMenuSeparator/>
-                           
-                                </DropdownMenuContent>
-                            </DropdownMenu>
+                        <DropDownSettingComponents settings={t('settings')} 
+                                                   language={t('language')}
+                                                   en={t('en')}
+                                                   cz={t('cz')}
+                                                   dark={t('dark')}
+                                                   light={t('light')}
+                                                   />
 
                         </div>
                     </header>

@@ -1,0 +1,29 @@
+{ "NotFoundPage":{
+    "title":"Stránka nenalezena",
+    "text":"Nenašli jsme stránku, kterou hledáte.", 
+    "return":"Zpět na hlavní stránku"
+  },
+   "HomePage": {
+    "title": "Vítejte na mém portfoliu",
+    "welcome1": "Vítejte! Jmenuji se",
+    "welcome2": "a toto je moje osobní portfolio. Zde můžete prozkoumat mé technické dovednosti, objevit projekty, které jsem vytvořil, a dozvědět se více o mé cestě ve světě technologií.",
+    "ViewPortfolio": "Zobrazit portfolio"
+},
+  "Links":{
+    "aboutme":"O Mně",
+    "myskills":"Mé znalosti",
+    "myprojects":"Mé projekty",
+    "contact":"Kontakt"
+    },
+   "Settings":{
+      "settings":"Nastavení",
+      "language":"Jazyk",
+      "theme":"Vzhled",
+       "cz":"Čeština",
+       "en":"Angličtina",
+       "dark":"Tmavý",
+       "light":"Světlý"
+     }
+    
+  
+    }

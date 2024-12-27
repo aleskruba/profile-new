@@ -7,10 +7,11 @@ import type { Metadata } from 'next';
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>; // `params` is a Promise
 }): Promise<Metadata> {
-  // Extract the locale from params
-  const { locale } = params;
+  // Await the promise to resolve params
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
 
   // Fetch the messages based on the locale
   const messages = await getMessages({ locale });

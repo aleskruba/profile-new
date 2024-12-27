@@ -5,21 +5,8 @@ import Image from "next/image";
 import { DashboardLinks } from "../components/DashboardLinks";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu, User2,Settings } from "lucide-react";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuGroup,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuPortal,
-    DropdownMenuSeparator,
-    DropdownMenuShortcut,
-    DropdownMenuSub,
-    DropdownMenuSubContent,
-    DropdownMenuSubTrigger,
-    DropdownMenuTrigger,
-  } from "@/components/ui/dropdown-menu"
+import { Menu } from "lucide-react";
+
 import { getTranslations } from 'next-intl/server';
 import DropDownSettingComponents from "../components/DropDownSettingComponents";
 
@@ -28,7 +15,8 @@ export default async function DashboardLayout({children}:{children : ReactNode})
     const t = await getTranslations('Settings');
       return (
         <>
-            <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
+            <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr] dark:bg-gradient-to-b dark:from-gray-800 dark:via-blue-900 dark:to-gray-900 
+  bg-gradient-to-b from-blue-100 via-white to-gray-100 text-center">
 
             <div className="hidden border-r bg-muted/40 md:block">
 
@@ -36,7 +24,7 @@ export default async function DashboardLayout({children}:{children : ReactNode})
                 <div className="g-14 flex items-center border-b-4 px-4 lg:h-[60px] lg:px-6">
                     <Link href="/" className="flex items-center gap-2">
                     
-                    <Image src={Logo} alt={Logo}className="size-7"/>
+                    <Image src={Logo} alt={Logo} className="size-7 text-blue-600"/>
                     <p className="text-xl font-bold">
                         Aleš  <span className="text-blue-600">DevWeb</span> 
                     </p>
@@ -98,12 +86,14 @@ export default async function DashboardLayout({children}:{children : ReactNode})
                                                    cz={t('cz')}
                                                    dark={t('dark')}
                                                    light={t('light')}
+                                                   themeText={t('theme')}
                                                    />
 
                         </div>
                     </header>
 
-                    <main className=" bg-blue-500 ">
+                    <main className="dark:bg-gradient-to-b dark:from-gray-800 dark:via-blue-900 dark:to-gray-900 
+  bg-gradient-to-b from-blue-100 via-white to-gray-100 h-screen  ">
                         {children}
                     </main>
 

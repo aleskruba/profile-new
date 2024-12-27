@@ -24,9 +24,10 @@ interface DropDownProps {
   cz: string;
   dark:string;
   light:string;
+  themeText:string;
 }
 
-function DropDownSettingComponents({ settings, language, en, cz,dark,light }: DropDownProps) {
+function DropDownSettingComponents({ settings, language, en, cz,dark,light,themeText }: DropDownProps) {
   const { setTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -79,7 +80,7 @@ function DropDownSettingComponents({ settings, language, en, cz,dark,light }: Dr
 
           <DropdownMenuGroup>
             <DropdownMenuSub>
-              <DropdownMenuSubTrigger>Theme</DropdownMenuSubTrigger>
+              <DropdownMenuSubTrigger>{themeText}</DropdownMenuSubTrigger>
               <DropdownMenuPortal>
                 <DropdownMenuSubContent>
                   <DropdownMenuItem onClick={() => setTheme("light")}>{light}</DropdownMenuItem>

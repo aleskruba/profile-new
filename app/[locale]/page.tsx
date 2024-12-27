@@ -1,11 +1,36 @@
 import { Button } from "@/components/ui/button";
-import { getTranslations } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import {Link} from '@/i18n/routing';
 import DropDownSettingComponents from "./components/DropDownSettingComponents";
+
+
+export async function generateMetadata({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>; // Adjust to expect a Promise
+}) {
+  // Await the promise to resolve params
+  const resolvedParams = await params; 
+  const { locale } = resolvedParams;
+
+  // Fetch the messages based on the locale
+  const messages = await getMessages({ locale });
+
+  const title = (messages.Links as Record<string, string>)?.aboutme;
+
+  // Return the metadata object with the title
+  return {
+    title,
+  };
+}
 
 export default async function Home() {
   const t = await getTranslations('HomePage');
   const s = await getTranslations('Settings');
+
+
 
   return (
 <div className="flex flex-col min-h-screen 
@@ -18,6 +43,7 @@ export default async function Home() {
                                                    cz={s('cz')}
                                                    dark={s('dark')}
                                                    light={s('light')}
+                                                   themeText={s('theme')}
                                                    /> 
      </nav>
      <div className="flex flex-col items-center justify-center h-[75vh]">

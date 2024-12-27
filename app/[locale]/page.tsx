@@ -2,22 +2,20 @@ import { Button } from "@/components/ui/button";
 import { getMessages, getTranslations } from 'next-intl/server';
 import {Link} from '@/i18n/routing';
 import DropDownSettingComponents from "./components/DropDownSettingComponents";
-
+import type { Metadata } from 'next';
 
 export async function generateMetadata({
-  children,
   params,
 }: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>; // Adjust to expect a Promise
-}) {
-  // Await the promise to resolve params
-  const resolvedParams = await params; 
-  const { locale } = resolvedParams;
+  params: { locale: string };
+}): Promise<Metadata> {
+  // Extract the locale from params
+  const { locale } = params;
 
   // Fetch the messages based on the locale
   const messages = await getMessages({ locale });
 
+  // Safely access the title from the messages
   const title = (messages.Links as Record<string, string>)?.aboutme;
 
   // Return the metadata object with the title

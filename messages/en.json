@@ -12,13 +12,14 @@
   "boldLanguages": "Czech, English, Spanish",
   "mainText3": "I am an amateur full-stack developer focusing on web application development. I started programming a few years ago when I learned the basics of ",
   "boldTechnologies": "Python, JavaScript, CSS",
-  "mainText4": ", and gradually became familiar with frameworks such as ",
-  "boldFrameworks": "React.js, Next.js",
-  "mainText5": " and also with backend technologies like ",
-  "boldBackend": "Express.js, Flask, Django",
+  "mainText4": ", and gradually became familiar with libraries like ",
+  "boldFrameworks": "React.js",
+  "mainText5": " and frameworks like ",
+  "boldBackend": "Next.js, Express.js, Flask, Django",
   "mainText6": "Although I don’t have professional experience in web development yet, I am highly motivated and continuously learning new technologies and techniques. My goal is to grow in this field and utilize my skills to create high-quality web applications. I am looking for an opportunity to fully dedicate myself to web development and take my career to the next level.",
   "ViewPortfolio": "View portfolio"
 },
+
       "Links":{
         "introduction":"Introduction - Aleš Kruba",
         "aboutme":"About Me",
@@ -34,6 +35,12 @@
        "en":"English",
         "dark":"Dark",
        "light":"Light"
-      }
+      },
+"AboutMe":   {
+  "ProfessionalExperience": "For over 10 years, I have been involved in transportation and logistics at the freight forwarding company DOKRAM s.r.o., where I am responsible for a wide range of activities, including organizing and coordinating shipments, negotiating with suppliers and customers. In addition, I also serve as the company owner. Furthermore, I manage the company's IT infrastructure, including maintaining small networks, installing and configuring software, and managing websites.",
+  "ProgrammingJourney": "I got into programming during high school, where I was introduced to the basics of Pascal, HTML, and CSS. I have been actively programming for over 7 years, starting by supporting my son in his programming beginnings. This reignited my passion for coding, which I later developed in Python, Flask, and Django, and eventually focused on JavaScript, particularly React.js and Next.js for building modern web applications.",
+  "CareerTransition": "After more than 10 years in transportation and logistics, I decided to fully transition into web development. I am self-taught and during my career, I have created several personal projects where I applied my skills in design and application development, which helped me grow further.",
+  "CareerGoal": "My goal is to develop as a web developer, ideally in a junior position or through contract-based collaboration. I am excited about the opportunities for continuous learning and improvement, which is a key aspect of every new project."
+}
   
     }

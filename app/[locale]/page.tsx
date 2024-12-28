@@ -33,7 +33,7 @@ export default async function Home() {
 
   return (
 <div className="flex flex-col min-h-screen 
-  dark:bg-gradient-to-b dark:from-gray-800 dark:via-blue-900 dark:to-gray-900 
+  dark:bg-gradient-to-b dark:from-gray-800  dark:to-gray-900 
   bg-gradient-to-b from-blue-100 via-white to-gray-100 text-center pt-2 px-6">   
        <nav className="flex justify-end">  
             <DropDownSettingComponents settings={s('settings')} 

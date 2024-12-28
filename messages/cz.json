@@ -13,13 +13,14 @@
   "boldLanguages": "češtině, angličtině, španělštině",
   "mainText3": "Jsem amatérský full-stack programátor, který se zaměřuje na vývoj webových aplikací. Začal jsem se programování věnovat před několika lety, kdy jsem se naučil základy ",
   "boldTechnologies": "Pythonu, JavaScriptu, CSS",
-  "mainText4": ", a postupně se seznámil s frameworky jako ",
-  "boldFrameworks": "React.js, Next.js",
-  "mainText5": " a také s backendovými technologiemi jako ",
-  "boldBackend": "Express.js, Flask, Django",
+  "mainText4": ", a postupně se seznámil s knihovnami jako ",
+  "boldFrameworks": "React.js",
+  "mainText5": " a frameworky jako ",
+  "boldBackend": "Next.js, Express.js, Flask, Django",
   "mainText6": "Ačkoli dosud nemám profesionální zkušenosti v oblasti webového vývoje, jsem velmi motivovaný a neustále se učím nové technologie a techniky. Mým cílem je rozvíjet se v této oblasti a využít své dovednosti pro tvorbu kvalitních webových aplikací. Hledám příležitost, jak se naplno věnovat vývoji webových aplikací a posunout svou kariéru na další úroveň.",
   "ViewPortfolio": "Zobrazit portfolio"
-},
+}
+,
   "Links":{
     "introduction":"Úvodní strana  - Aleš Kruba",
     "aboutme":"O Mně",
@@ -35,7 +36,16 @@
        "en":"Angličtina",
        "dark":"Tmavý",
        "light":"Světlý"
-     }
+     },
+
+     "AboutMe": {
+       "ProfessionalExperience": "Již více než 10 let se věnuji dopravě a logistice ve spediční společnosti DOKRAM s.r.o., kde odpovídám za široké spektrum činností, včetně organizace a koordinace přeprav, jednání s dodavateli a zákazníky. Kromě toho působím také jako majitel společnosti. Dále mám na starosti správu firemní IT infrastruktury, včetně údržby malých sítí, instalace a konfigurace softwaru a správu webových stránek.",
+      "ProgrammingJourney": "K programování jsem se dostal již na gymnáziu, kde jsem se seznámil se základy Pascalu, HTML a CSS. Aktivně programuju více než 7 let, kdy jsem začal podporovat svého syna v jeho programátorských začátcích. To mě znovu přivedlo k programování, které jsem postupně rozvinul v Pythonu, Flasku a Django, a později se zaměřil na JavaScript, zejména na React.js a Next.js pro tvorbu moderních webových aplikací.",
+      "CareerTransition": "Po více než 10 letech v oblasti dopravy a logistiky jsem se rozhodl plně přejít na webový vývoj. Jsem samouk a během své kariéry jsem vytvořil několik osobních projektů, kde jsem aplikoval své dovednosti při návrhu a vývoji aplikací, což mě posunulo dál.",
+      "CareerGoal": "Mým cílem je rozvíjet se jako webový vývojář, ideálně na juniorní pozici nebo formou kontraktorské spolupráce. Jsem nadšený z možností neustálého učení a zlepšování, což je pro mě klíčovým prvkem každého nového projektu."
+    }
+
     
-  
+
+
     }

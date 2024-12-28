@@ -112,8 +112,8 @@ export default async function DashboardLayout({children}:{children : ReactNode})
                         </div>
                     </header>
 
-                    <main className="dark:bg-gradient-to-b dark:from-gray-800 dark:via-blue-900 dark:to-gray-900 
-  bg-gradient-to-b from-blue-100 via-white to-gray-100 h-screen  ">
+                    <main className="dark:bg-gradient-to-b dark:from-gray-800  dark:to-gray-900 
+                                    bg-gradient-to-b from-blue-100 via-white to-blue-100 h-screen  ">
                         {children}
                     </main>
 

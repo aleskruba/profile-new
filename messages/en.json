@@ -10,10 +10,11 @@
       "ViewPortfolio": "View Portfolio"
     },
       "Links":{
-        "aboutme":"about me",
-        "myskills":"my skills",
-        "myprojects":"my projects",
-        "contact":"contact"
+        "introduction":"Introduction - Aleš Kruba",
+        "aboutme":"About Me",
+        "myskills":"My Skills",
+        "myprojects":"My Projects",
+        "contact":"Contact"
     },
     "Settings":{
        "settings":"Settings",

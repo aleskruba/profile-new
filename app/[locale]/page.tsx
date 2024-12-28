@@ -17,7 +17,7 @@ export async function generateMetadata({
   const messages = await getMessages({ locale });
 
   // Safely access the title from the messages
-  const title = (messages.Links as Record<string, string>)?.aboutme;
+  const title = (messages.Links as Record<string, string>)?.introduction;
 
   // Return the metadata object with the title
   return {

@@ -51,31 +51,31 @@ export default async function Home() {
   </h1>
   
   <p className="text-base md:text-lg pt-6 md:pt-2 text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify ">
-    {t('welcome1')} <span className="font-bold text-blue-500">Aleš Kruba</span> {t('welcome2')}
+    {t('welcome1')} <span className="font-bold text-blue-700 dark:text-blue-300">Aleš Kruba</span> {t('welcome2')}
   </p>
 
   <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify">
     {t('mainText1')} 
-    <span className="font-bold text-blue-500">{t('boldILive')}</span>
+    <span className="font-bold text-blue-700 dark:text-blue-300">{t('boldILive')}</span>
 
     {t('mainText2')} 
-    <span className="font-bold text-blue-500">{t('boldLanguages')}</span>.
+    <span className="font-bold text-blue-700 dark:text-blue-300">{t('boldLanguages')}</span>.
   </p>
 
   <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify">
     {t('mainText3')}
-    <span className="font-bold text-blue-500">{t('boldTechnologies')}</span>
+    <span className="font-bold text-blue-700 dark:text-blue-300">{t('boldTechnologies')}</span>
     {t('mainText4')}
-    <span className="font-bold text-blue-500">{t('boldFrameworks')}</span>
+    <span className="font-bold text-blue-700 dark:text-blue-300">{t('boldFrameworks')}</span>
     {t('mainText5')}
-    <span className="font-bold text-blue-500">{t('boldBackend')}</span>.
+    <span className="font-bold text-blue-700 dark:text-blue-300">{t('boldBackend')}</span>.
   </p>
 
   <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify">
     {t('mainText6')}
   </p>
   </div>
-  <div className="flex justify-center">
+  <div className="flex justify-center pt-12 ">
   <Button className="px-6 py-3 text-base md:text-lg font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
     <Link href="/dashboard">{t('ViewPortfolio')}</Link>
   </Button>

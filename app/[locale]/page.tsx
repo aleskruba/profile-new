@@ -45,16 +45,16 @@ export default async function Home() {
                                                    themeText={s('theme')}
                                                    /> 
      </nav>
-     <div className="flex flex-col items-start justify-center h-auto md:min-h-[75vh]  md:mx-28">
-  <h1 className="text-4xl text-center font-extrabold text-gray-800 dark:text-gray-200 mb-3 md:md-6">
+     <div className="flex flex-col items-start justify-center h-auto md:min-h-[75vh] pt-10 md:pt-0  md:mx-28">
+  <h1 className="text-2xl md:text-4xl text-center font-extrabold text-gray-800 dark:text-gray-200 mb-3 md:md-6">
     {t('title')}
   </h1>
   
-  <p className="text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-left">
+  <p className="text-base md:text-lg pt-6 md:pt-2 text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify ">
     {t('welcome1')} <span className="font-bold text-blue-500">Aleš Kruba</span> {t('welcome2')}
   </p>
 
-  <p className="text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-left">
+  <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify">
     {t('mainText1')} 
     <span className="font-bold text-blue-500">{t('boldILive')}</span>
 
@@ -62,7 +62,7 @@ export default async function Home() {
     <span className="font-bold text-blue-500">{t('boldLanguages')}</span>.
   </p>
 
-  <p className="text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-left">
+  <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify">
     {t('mainText3')}
     <span className="font-bold text-blue-500">{t('boldTechnologies')}</span>
     {t('mainText4')}
@@ -71,12 +71,12 @@ export default async function Home() {
     <span className="font-bold text-blue-500">{t('boldBackend')}</span>.
   </p>
 
-  <p className="text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-left">
+  <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify">
     {t('mainText6')}
   </p>
   </div>
   <div className="flex justify-center">
-  <Button className="px-6 py-3 text-lg font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
+  <Button className="px-6 py-3 text-base md:text-lg font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
     <Link href="/dashboard">{t('ViewPortfolio')}</Link>
   </Button>
   </div>

@@ -46,15 +46,15 @@ export default async function Home() {
                                                    /> 
      </nav>
      <div className="flex flex-col items-start justify-center h-auto md:min-h-[75vh]  md:mx-28">
-  <h1 className="text-4xl text-center font-extrabold text-gray-800 dark:text-gray-200 mb-6">
+  <h1 className="text-4xl text-center font-extrabold text-gray-800 dark:text-gray-200 mb-3 md:md-6">
     {t('title')}
   </h1>
   
-  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 text-justify">
+  <p className="text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-left">
     {t('welcome1')} <span className="font-bold text-blue-500">Aleš Kruba</span> {t('welcome2')}
   </p>
 
-  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 text-justify">
+  <p className="text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-left">
     {t('mainText1')} 
     <span className="font-bold text-blue-500">{t('boldILive')}</span>
 
@@ -62,7 +62,7 @@ export default async function Home() {
     <span className="font-bold text-blue-500">{t('boldLanguages')}</span>.
   </p>
 
-  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 text-justify">
+  <p className="text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-left">
     {t('mainText3')}
     <span className="font-bold text-blue-500">{t('boldTechnologies')}</span>
     {t('mainText4')}
@@ -71,7 +71,7 @@ export default async function Home() {
     <span className="font-bold text-blue-500">{t('boldBackend')}</span>.
   </p>
 
-  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 text-justify">
+  <p className="text-lg text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-left">
     {t('mainText6')}
   </p>
   </div>

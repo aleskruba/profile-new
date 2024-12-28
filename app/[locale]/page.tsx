@@ -45,17 +45,42 @@ export default async function Home() {
                                                    themeText={s('theme')}
                                                    /> 
      </nav>
-     <div className="flex flex-col items-center justify-center h-[75vh]">
+     <div className="flex flex-col items-start justify-center h-auto md:min-h-[75vh]  md:mx-28">
+  <h1 className="text-4xl text-center font-extrabold text-gray-800 dark:text-gray-200 mb-6">
+    {t('title')}
+  </h1>
+  
+  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 text-justify">
+    {t('welcome1')} <span className="font-bold text-blue-500">Aleš Kruba</span> {t('welcome2')}
+  </p>
 
-      <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">{t('title')}</h1>
-      <p className="text-lg text-gray-600 dark:text-gray-300 max-w-md mb-6 text-justify">
-      {t('welcome1')} <span className="font-bold text-blue-500 ">Aleš</span>,{t('welcome2')}
-</p>
-<Button className="px-6 py-3 text-lg font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600">
-<Link href="/dashboard">{t('ViewPortfolio')}</Link>
+  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 text-justify">
+    {t('mainText1')} 
+    <span className="font-bold text-blue-500">{t('boldILive')}</span>
 
-</Button>
-    </div>
+    {t('mainText2')} 
+    <span className="font-bold text-blue-500">{t('boldLanguages')}</span>.
+  </p>
+
+  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 text-justify">
+    {t('mainText3')}
+    <span className="font-bold text-blue-500">{t('boldTechnologies')}</span>
+    {t('mainText4')}
+    <span className="font-bold text-blue-500">{t('boldFrameworks')}</span>
+    {t('mainText5')}
+    <span className="font-bold text-blue-500">{t('boldBackend')}</span>.
+  </p>
+
+  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 text-justify">
+    {t('mainText6')}
+  </p>
+  </div>
+  <div className="flex justify-center">
+  <Button className="px-6 py-3 text-lg font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
+    <Link href="/dashboard">{t('ViewPortfolio')}</Link>
+  </Button>
+  </div>
+
     </div>
   );
 }

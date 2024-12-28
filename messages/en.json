@@ -2,13 +2,23 @@
     "title":"Page Not Found",
     "text":"We couldn't find the page you're looking for", 
     "return":"Return home"
-  },
-    "HomePage": {
-      "title": "Welcome to My Portfolio",
-      "welcome1":"Welcome! My name is",
-      "welcome2":"and this is my personal portfolio website. Here, you can explore my technical expertise, discover the projects I've built, and learn more about my journey in the tech world.",
-      "ViewPortfolio": "View Portfolio"
-    },
+  },"HomePage": {
+  "title": "Welcome to my portfolio",
+  "welcome1": "My name is ",
+  "welcome2": "and this is my personal portfolio.",
+  "mainText1": "I am 46 years old and live in ",
+  "boldILive": "Brno, Czech Republic.",
+  "mainText2": " I communicate in ",
+  "boldLanguages": "Czech, English, Spanish",
+  "mainText3": "I am an amateur full-stack developer focusing on web application development. I started programming a few years ago when I learned the basics of ",
+  "boldTechnologies": "Python, JavaScript, CSS",
+  "mainText4": ", and gradually became familiar with frameworks such as ",
+  "boldFrameworks": "React.js, Next.js",
+  "mainText5": " and also with backend technologies like ",
+  "boldBackend": "Express.js, Flask, Django",
+  "mainText6": "Although I don’t have professional experience in web development yet, I am highly motivated and continuously learning new technologies and techniques. My goal is to grow in this field and utilize my skills to create high-quality web applications. I am looking for an opportunity to fully dedicate myself to web development and take my career to the next level.",
+  "ViewPortfolio": "View portfolio"
+},
       "Links":{
         "introduction":"Introduction - Aleš Kruba",
         "aboutme":"About Me",

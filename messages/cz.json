@@ -3,11 +3,22 @@
     "text":"Nenašli jsme stránku, kterou hledáte.", 
     "return":"Zpět na hlavní stránku"
   },
-   "HomePage": {
-    "title": "Vítejte na mém portfoliu",
-    "welcome1": "Vítejte! Jmenuji se",
-    "welcome2": "a toto je moje osobní portfolio. Zde můžete prozkoumat mé technické dovednosti, objevit projekty, které jsem vytvořil, a dozvědět se více o mé cestě ve světě technologií.",
-    "ViewPortfolio": "Zobrazit portfolio"
+"HomePage": {
+  "title": "Vítejte na mém portfoliu",
+  "welcome1": "Jmenuji se ",
+  "welcome2": "a toto je moje osobní portfolio.",
+  "mainText1": "Je mi 46 let a žiji v ",
+  "boldILive": "Brně, Česká republika.",
+  "mainText2": " Komunikuji v ",
+  "boldLanguages": "češtině, angličtině, španělštině",
+  "mainText3": "Jsem amatérský full-stack programátor, který se zaměřuje na vývoj webových aplikací. Začal jsem se programování věnovat před několika lety, kdy jsem se naučil základy ",
+  "boldTechnologies": "Pythonu, JavaScriptu, CSS",
+  "mainText4": ", a postupně se seznámil s frameworky jako ",
+  "boldFrameworks": "React.js, Next.js",
+  "mainText5": " a také s backendovými technologiemi jako ",
+  "boldBackend": "Express.js, Flask, Django",
+  "mainText6": "Ačkoli dosud nemám profesionální zkušenosti v oblasti webového vývoje, jsem velmi motivovaný a neustále se učím nové technologie a techniky. Mým cílem je rozvíjet se v této oblasti a využít své dovednosti pro tvorbu kvalitních webových aplikací. Hledám příležitost, jak se naplno věnovat vývoji webových aplikací a posunout svou kariéru na další úroveň.",
+  "ViewPortfolio": "Zobrazit portfolio"
 },
   "Links":{
     "introduction":"Úvodní strana  - Aleš Kruba",

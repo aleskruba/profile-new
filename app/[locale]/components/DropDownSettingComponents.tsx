@@ -26,7 +26,10 @@ interface DropDownProps {
   light:string;
   themeText:string;
 }
-
+import Image from "next/image";
+import flagGB from "@/public/gb.png"
+import flagCZ from "@/public/cz.png"
+import { Sun, Moon, Monitor } from "lucide-react";
 function DropDownSettingComponents({ settings, language, en, cz,dark,light,themeText }: DropDownProps) {
   const { setTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -66,10 +69,24 @@ function DropDownSettingComponents({ settings, language, en, cz,dark,light,theme
               <DropdownMenuPortal>
                 <DropdownMenuSubContent>
                   <DropdownMenuItem onClick={() => changeLanguage("en")} >
-                    {en}
+                    <div className="flex gap-2">
+                    <Image 
+                        src={flagGB}
+                        alt="GB Flag" 
+                        width={24}
+                        />
+                      {en}
+                    </div>
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => changeLanguage("cz")}>
-                    {cz}
+                  <div className="flex gap-2">
+                    <Image 
+                        src={flagCZ}
+                        alt="CZ Flag" 
+                        width={24}
+                        />
+                      {cz}
+                    </div>
                   </DropdownMenuItem>
                 </DropdownMenuSubContent>
               </DropdownMenuPortal>
@@ -83,9 +100,18 @@ function DropDownSettingComponents({ settings, language, en, cz,dark,light,theme
               <DropdownMenuSubTrigger>{themeText}</DropdownMenuSubTrigger>
               <DropdownMenuPortal>
                 <DropdownMenuSubContent>
-                  <DropdownMenuItem onClick={() => setTheme("light")}>{light}</DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => setTheme("dark")}>{dark}</DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setTheme("light")}>
+                  <Sun size={16} style={{ marginRight: "8px" }} />
+                  {light}
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setTheme("dark")}>
+                  <Moon size={16} style={{ marginRight: "8px" }} />
+                  {dark}
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setTheme("system")}>
+                  <Monitor size={16} style={{ marginRight: "8px" }} />
+                  System
+                </DropdownMenuItem>
                 </DropdownMenuSubContent>
               </DropdownMenuPortal>
             </DropdownMenuSub>

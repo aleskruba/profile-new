@@ -50,7 +50,7 @@ export default async function Home() {
     {t('title')}
   </h1>
   
-  <p className="text-base md:text-lg pt-6 md:pt-2 text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify ">
+  <p className="text-base md:text-lg pt-3 md:pt-2 text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify ">
     {t('welcome1')} <span className="font-bold text-blue-700 dark:text-blue-300">Aleš Kruba</span> {t('welcome2')}
   </p>
 
@@ -75,7 +75,7 @@ export default async function Home() {
     {t('mainText6')}
   </p>
   </div>
-  <div className="flex justify-center pt-12 ">
+  <div className="flex justify-center md:pt-12 pt-6 ">
   <Button className="px-6 py-3 text-base md:text-lg font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
     <Link href="/dashboard">{t('ViewPortfolio')}</Link>
   </Button>

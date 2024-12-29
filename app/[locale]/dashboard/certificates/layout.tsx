@@ -16,7 +16,7 @@ export async function generateMetadata({
   const messages = await getMessages({ locale });
 
   // Safely access the title from the messages
-  const title = (messages.Links as Record<string, string>)?.contact;
+  const title = (messages.Links as Record<string, string>)?.mycertificates
 
   // Return the metadata object with the title
   return {
@@ -28,7 +28,7 @@ export default async function CertificateLayout({children}:{children : ReactNode
   return (
     <div > 
          
-         <main className="bg-yellow-900 flex ">
+         <main className="overflow-y-auto h-full">
             {children}
     </main>
 </div>

@@ -4,12 +4,15 @@ import { cn } from "@/lib/utils";
 
 import { Link } from "@/i18n/routing";
 import { usePathname } from "next/navigation"; // Client-side hook for pathname
-import { HomeIcon, User2, LucideIcon } from "lucide-react"; // Import all required icons
+import { HomeIcon, Code  ,User2,Files ,FileUser , LucideIcon } from "lucide-react"; // Import all required icons
 
 // Icon mapping
 const iconMapping: Record<string, LucideIcon> = {
   HomeIcon,
+  Code ,
   User2,
+  Files,
+  FileUser 
 };
 
 type DashboardLink = {

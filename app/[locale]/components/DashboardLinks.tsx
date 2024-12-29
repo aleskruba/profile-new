@@ -23,21 +23,21 @@ export async function DashboardLinks() {
       id: 1,
       name: t("myskills"),
       href: "/dashboard/myskills" as "/dashboard/myskills", // Cast href to the correct union type
-      icon: "User2",
+      icon: "Code",
    
     },
     {
       id: 2,
       name: t("myprojects"),
       href: "/dashboard/projects" as "/dashboard/projects", // Cast href to the correct union type
-      icon: "User2",
+      icon: "Files",
    
     },
     {
       id: 3,
       name: t("mycertificates"),
       href: "/dashboard/certificates" as "/dashboard/certificates", // Cast href to the correct union type
-      icon: "User2",
+      icon: "FileUser",
     },
     {
       id: 4,

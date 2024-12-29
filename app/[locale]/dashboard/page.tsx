@@ -7,7 +7,7 @@ export default async function DashboardRoute() {
 
   return (
   
-  <div className="text-left px-0 md:px-6 py-0 md:py-8 max-w-6xl mx-auto ">
+  <div className="text-left px-0 md:px-6  max-w-6xl mx-auto ">
 
 <h1 className='
   text-center pt-4 pb-4 text-base md:text-xl 

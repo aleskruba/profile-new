@@ -7,7 +7,7 @@ export default async function DashboardRoute() {
 
   return (
   
-  <div className="text-left px-6 py-8 max-w-6xl mx-auto ">
+  <div className="text-left px-0 md:px-6 py-0 md:py-8 max-w-6xl mx-auto ">
 
 <h1 className='
   text-center pt-4 pb-4 text-base md:text-xl 
@@ -23,17 +23,17 @@ export default async function DashboardRoute() {
 >{t('el44')}
     
   </h1>
-  
-    <p className='pt-4 text-justify'>
+
+    <p className='pt-4 text-left'>
 {t('ProfessionalExperience')}
 </p>
-<p className='pt-8 text-justify'>
+<p className='pt-8 text-left'>
 {t('ProgrammingJourney')}
 </p>
-<p className='pt-8 text-justify'>
+<p className='pt-8 text-left'>
 {t('CareerTransition')}
 </p> 
-<p className='pt-8 text-justify'>
+<p className='pt-8 text-left'>
 {t('CareerGoal')}
 </p>
   </div>

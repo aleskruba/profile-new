@@ -113,7 +113,7 @@ export default async function DashboardLayout({children}:{children : ReactNode})
                         </div>
                     </header>
 
-                    <main className="max-h-[90vh] h-full overflow-y-auto text-center 
+                    <main className="max-h-[90vh] h-full overflow-y-auto  
   bg-gradient-to-b from-blue-100 via-white to-blue-100 
   dark:bg-gradient-to-b dark:from-gray-800 dark:via-gray-900 dark:to-gray-900 
   dark:text-white 

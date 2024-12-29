@@ -7,7 +7,7 @@ export default async function DashboardRoute() {
     return (
 <div className="text-left px-0 md:px-6  max-w-6xl mx-auto">
 <h1 className='
-  text-center pt-4 pb-4 text-base md:text-xl 
+  text-center pt-1 md:pt-4 pb-4 text-base md:text-xl 
   font-semibold 
   bg-gradient-to-r
   from-black via-blue-800 to-black

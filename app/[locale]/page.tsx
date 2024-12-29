@@ -19,9 +19,11 @@ export async function generateMetadata({
   // Safely access the title from the messages
   const title = (messages.Links as Record<string, string>)?.introduction;
 
+
   // Return the metadata object with the title
   return {
     title,
+    description: 'Ales Kruba -My perosnal portfolio',
   };
 }
 

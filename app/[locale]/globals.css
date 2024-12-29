@@ -70,3 +70,28 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4A90E2; /* Light blue color for the thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 3px solid #fff; /* White border around the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey color for the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Dark Mode Scrollbar */
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background-color: #6B7280; /* Dark grey color for the thumb */
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+  background: #2D3748; /* Darker grey track color */
+}

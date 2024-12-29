@@ -24,7 +24,7 @@
   "Links":{
     "introduction":"Úvodní strana  - Aleš Kruba",
     "aboutme":"O Mně",
-    "myskills":"Mé znalosti",
+    "myskills":"Mé dovednosti",
     "myprojects":"Mé projekty",
     "contact":"Kontakt"
     },
@@ -40,12 +40,59 @@
 
      "AboutMe": {
        "ProfessionalExperience": "Již více než 10 let se věnuji dopravě a logistice ve spediční společnosti DOKRAM s.r.o., kde odpovídám za široké spektrum činností, včetně organizace a koordinace přeprav, jednání s dodavateli a zákazníky. Kromě toho působím také jako majitel společnosti. Dále mám na starosti správu firemní IT infrastruktury, včetně údržby malých sítí, instalace a konfigurace softwaru a správu webových stránek.",
-      "ProgrammingJourney": "K programování jsem se dostal již na gymnáziu, kde jsem se seznámil se základy Pascalu, HTML a CSS. Aktivně programuju více než 7 let, kdy jsem začal podporovat svého syna v jeho programátorských začátcích. To mě znovu přivedlo k programování, které jsem postupně rozvinul v Pythonu, Flasku a Django, a později se zaměřil na JavaScript, zejména na React.js a Next.js pro tvorbu moderních webových aplikací.",
-      "CareerTransition": "Po více než 10 letech v oblasti dopravy a logistiky jsem se rozhodl plně přejít na webový vývoj. Jsem samouk a během své kariéry jsem vytvořil několik osobních projektů, kde jsem aplikoval své dovednosti při návrhu a vývoji aplikací, což mě posunulo dál.",
-      "CareerGoal": "Mým cílem je rozvíjet se jako webový vývojář, ideálně na juniorní pozici nebo formou kontraktorské spolupráce. Jsem nadšený z možností neustálého učení a zlepšování, což je pro mě klíčovým prvkem každého nového projektu."
-    }
+      "ProgrammingJourney": "K programování jsem se dostal během střední školy, kde jsem se seznámil se základy jazyka Pascal, HTML a CSS. Programování se věnuji aktivně již více než 7 let, začal jsem tím, že jsem podporoval svého syna v jeho začátcích. To mě znovu přivedlo k programování, které jsem dále rozvíjel pomocí Pythonu a jeho frameworků, Flask a Django. Následně jsem se zaměřil na JavaScript, především na vanilla JavaScript, a poté jsem své dovednosti rozšířil o React.js a Next.js pro vývoj moderních webových aplikací, přičemž na backend jsem používal Express, framework pro Node.js",
+      "CareerTransition": "Po celoživotní kariéře v dopravě a logistice jsem se rozhodl plně přejít do webového vývoje. Jsem samouk a během své kariéry jsem vytvořil několik osobních projektů, kde jsem aplikoval své dovednosti při návrhu a vývoji aplikací, což mě posunulo dál.",
+      "CareerGoal": "Mým cílem je rozvíjet se jako webový vývojář, ideálně na juniorní pozici nebo formou kontraktorské spolupráce. Jsem nadšený z možností neustálého učení a zlepšování, což je pro mě klíčovým prvkem každého nového projektu.",
+      "el44": "Rád pro vás vytvořím projekt na základě mých dovedností v sekci 'Mé dovednosti!' ."
+    },
 
-    
+"MySkills": {
+    "el1": "Frontend dovednosti",
+    "el2": "Práce s DOM selektory pro manipulaci a interakci s HTML prvky",
+    "el3": "Porozumění zpracování událostí, včetně click, hover a klávesových events",
+    "el4": "Asynchronní programování s promises, async/await",
+    "el5": "Tvorba interaktivních funkcí pomocí JavaScriptu (např. validace formulářů, dynamické aktualizace obsahu)",
+    "el6": "Porozumění closure, callbackům a funkcím vyššího řádu",
+    "el7": "React.js",
+    "el8": "Tvorba znovupoužitelných komponent a předávání props mezi nimi",
+    "el9": "Správa state managmentu pomocí useState a useReducer ",
+    "el10": "Získávání dat z API pomocí fetch nebo axios",
+    "el11": "Context API pro správu globálního states mezi komponentami",
+    "el12": "Optimistic update pomocí useState nebo TanStack Query pro plynulé UX",
+    "el13": "Zpracování lifecycle komponentů s hooky jako useEffect",
+    "el14": "Tvorba a správa kontrolovaných formulářů",
+    "el15": "Next.js",
+    "el16": "Porozumění server-side renderingu (SSR) a statické generaci stránek (SSG)",
+    "el17": "Routing stránek s routováním založeným na souborech v Next.js",
+    "el18": "Optimalizace výkonu pomocí optimalizace obrázků a lazy loading",
+    "el19": "Používám jak klasické CSS, tak Tailwind CSS, abych tvořil moderní a responzivní designy. Flexbox, Grid i různé způsoby pozicování mi pomáhají vytvářet flexibilní a přizpůsobivé layouty. Baví mě také přidávat plynulé přechody a animace, které dělají uživatelské prostředí živější a příjemnější.",
+    "el20": "Handling errors na straně klienta.",
+    "el21": "Pracoval jsem také s knihovnami jako ShadCN a Material UI pro vylepšení uživatelské zkušenosti a tvorbu moderních, responzivních rozhraní.",
+    "el22": "Backend dovednosti",
+    "el23": "Nastavení serverů s Express.js, včetně konfigurace CORS, routování, kontrolerů a zpracování reuqestů a responses.",
+    "el24": "Implementace autentizace: autentizace založená na relacích s Redis a autentizace na bázi tokenů pomocí JWT.",
+    "el25": "Používání Prisma pro interakci s databází, zjednodušení databázových dotazů a migrací.",
+    "el26": "Tvorba RESTful API a správa middleware pro vylepšenou funkcionalitu a bezpečnost.",
+    "el27": "Správa chyb a validace pro spolehlivá a bezpečná API.",
+    "el28": "Práce s relačními databázemi (MySQL, PostgreSQL), včetně základních SQL dotazů a porozumění vztahům mezi tabulkami (joiny, foreign keys atd.).",
+    "el29": "Práce s NoSQL databázemi jako MongoDB pro flexibilní, bezschémové ukládání dat.",
+    "el30": "Porozumění základním CRUD operacím a optimalizace výkonu databáze pomocí indexování a optimalizace dotazů.",
+    "el31": "Zkušenosti s migracemi dat a efektivním spravováním změn schématu v produkčních prostředích.",
+    "el32": "Databáze",
+    "el33": "Další dovednosti",
+    "el34": "Ukládání obrázků a mediálních souborů z mých projektů na Cloudinary pro efektivní správu mediálních souborů v cloudu.",
+    "el35": "Vytváření a správa repozitářů, práce s větvemi (vytváření, aktualizace, merge) a základní zkušenosti s forks.",
+    "el36": "Vytváření kontejnerů a obrazů pro mé aplikace a jejich ukládání na Docker Hub.",
+    "el37": "Základní znalosti",
+    "el38": "Vytvořil jsem malé projekty pomocí PHP, včetně základního server-side skriptování a jednoduchých dynamických webových stránek.",
+    "el39": "Pochopil jsem princip server-side renderingu a jak se v PHP prostředí zpracovávají požadavky a odpovědi.",
+    "el40": "Vytvořil jsem jednoduché projekty pomocí Flask a Django, naučil jsem se, jak vytvářet základní webové aplikace a API.",
+    "el41": "Seznámení s routováním, zpracováním uživatelských požadavků a implementací základní autentizace uživatelů v obou frameworkech.",
+    "el42": "Práce se systémy autentizace uživatelů, včetně přihlášení, odhlášení a správy relací.",
+    "el43": "Aktuálně se učím testovat s Jest a React Testing Library.",
+    "el44": "Rád pro vás vytvořím projekt na základě mých dovedností uvedených níže."
+}
+
 
 
     }

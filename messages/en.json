@@ -38,9 +38,59 @@
       },
 "AboutMe":   {
   "ProfessionalExperience": "For over 10 years, I have been involved in transportation and logistics at the freight forwarding company DOKRAM s.r.o., where I am responsible for a wide range of activities, including organizing and coordinating shipments, negotiating with suppliers and customers. In addition, I also serve as the company owner. Furthermore, I manage the company's IT infrastructure, including maintaining small networks, installing and configuring software, and managing websites.",
-  "ProgrammingJourney": "I got into programming during high school, where I was introduced to the basics of Pascal, HTML, and CSS. I have been actively programming for over 7 years, starting by supporting my son in his programming beginnings. This reignited my passion for coding, which I later developed in Python, Flask, and Django, and eventually focused on JavaScript, particularly React.js and Next.js for building modern web applications.",
-  "CareerTransition": "After more than 10 years in transportation and logistics, I decided to fully transition into web development. I am self-taught and during my career, I have created several personal projects where I applied my skills in design and application development, which helped me grow further.",
-  "CareerGoal": "My goal is to develop as a web developer, ideally in a junior position or through contract-based collaboration. I am excited about the opportunities for continuous learning and improvement, which is a key aspect of every new project."
-}
-  
+  "ProgrammingJourney": "I got into programming during high school, where I was introduced to the basics of Pascal, HTML, and CSS. I have been actively programming for over the last 7 years, starting by supporting my son in his programming beginnings. This brought me back to programming, which I further developed using Python and its frameworks, Flask and Django. I then focused on JavaScript, particularly vanilla JavaScript, along with React.js and Next.js to build modern web applications, while using Express, a Node.js framework, for the backend.",
+  "CareerTransition": "Following a lifelong career in transportation and logistics, I decided to fully transition into web development. I am self-taught and during my career, I have created several personal projects where I applied my skills in design and application development, which helped me grow further.",
+  "CareerGoal": "My goal is to develop as a web developer, ideally in a junior position or through contract-based collaboration. I am excited about the opportunities for continuous learning and improvement, which is a key aspect of every new project.",
+  "el44": "I would be happy to create a project for you based on my skills in the 'My Skills!' section."
+},
+
+  "MySkills": {
+    "el1": "Frontend Skills",
+    "el2": "Working with DOM selectors to manipulate and interact with HTML elements",
+    "el3": "Understanding event handling, including click, hover, and keyboard events",
+    "el4": "Asynchronous programming with promises, async/await",
+    "el5": "Building interactive features with JavaScript (e.g., form validation, dynamic content updates)",
+    "el6": "Understanding closures, callbacks, and higher-order functions",
+    "el7": "React js",
+    "el8": "Building reusable components and passing props between them",
+    "el9": "State management using useState and useReducer ",
+    "el10": "Fetching data from APIs using fetch or axios",
+    "el11": "Context API for managing global state across components",
+    "el12": "Optimistic updates with useState or TanStack Query for smooth UX",
+    "el13": "Handling component lifecycle with hooks like useEffect",
+    "el14": "Building and managing controlled forms",
+    "el15": "Next js",
+    "el16": "Understanding server-side rendering (SSR) and static site generation (SSG)",
+    "el17": "Page routing with file-based routing in Next.js",
+    "el18": "Optimizing performance with image optimization and lazy loading",
+    "el19": "I use both classic CSS and Tailwind CSS to create responsive and modern layouts. I'm comfortable working with Flexbox, Grid, and positioning to build flexible, adaptive designs. I also like to add smooth transitions and animations to make user interactions more engaging and dynamic.",
+    "el20": "Handling errors on client side.",
+    "el21": "I have also worked with libraries like ShadCN and Material UI to enhance the user experience and create modern, responsive interfaces.",
+    "el22": "Backend Skills",
+    "el23": "Setting up servers with Express.js, including CORS configuration, routing, controllers, and handling requests and responses.",
+  "el24": "Implementing authentication: session-based authentication with Redis and token-based authentication using JWT.",
+  "el25": "Using Prisma to interact with the database, simplifying database queries and migrations.",
+  "el26": "Building RESTful APIs and managing middleware for enhanced functionality and security.",
+  "el27": "Handling error management and validation for robust and secure APIs.",
+  "el28": "Working with relational databases (MySQL, PostgreSQL), including basic SQL queries and understanding relationships between tables (joins, foreign keys, etc.).",
+  "el29": "Working with NoSQL databases like MongoDB for more flexible, schema-less data storage.",
+  "el30": "Understanding basic CRUD operations and optimizing database performance with indexing and query optimization.",
+  "el31": "Experience with data migrations and managing schema changes effectively in production environments.",
+  "el32": "Databases",
+  "el33": "Other skills",
+  "el34":"Storing images and media files from my projects on Cloudinary for efficient cloud-based media management.",
+  "el35": "Creating and managing repositories, working with branches (creating, updating, merging), and basic experience with forks.",
+  "el36": "Creating containers and images for my applications and storing them in Docker Hub.",
+  "el37": "Basic knwoledge",
+  "el38": "Created small projects using PHP, including basic server-side scripting and simple dynamic web pages.",
+  "el39": "Gained understanding of server-side rendering and handling requests and responses in a PHP environment.",
+  "el40": "Built simple projects using Flask and Django, learning how to create basic web applications and APIs.",
+  "el41": "Familiar with routing, handling user requests, and implementing basic user authentication in both frameworks.",
+  "el42":"Worked with user authentication systems, including login, logout, and session management.",
+  "el43":"I am currently learning to test with Jest and React Testing Library",
+  "el44": "I would be happy to create a project for you based on my skills listed below."
+
+
+  }
+
     }

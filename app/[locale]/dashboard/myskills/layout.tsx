@@ -27,9 +27,10 @@ export default async function SkillsLayout({children}:{children : ReactNode}){
   return (
     <div > 
          
-         <main className="bg-red-500 flex ">
-            {children}
-    </main>
+         <main className="overflow-y-auto h-full">
+                    {children}
+         </main>
+
 </div>
   )
 }

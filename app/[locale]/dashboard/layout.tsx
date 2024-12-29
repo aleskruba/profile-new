@@ -9,6 +9,7 @@ import { Menu } from "lucide-react";
 import DropDownSettingComponents from "../components/DropDownSettingComponents";
 import { getTranslations,getMessages } from 'next-intl/server';
 import type { Metadata } from 'next';
+import Footer from "../components/Footer";
 
 export async function generateMetadata({
   params,
@@ -63,8 +64,8 @@ export default async function DashboardLayout({children}:{children : ReactNode})
 
             </div>
 
-                <div className="flex flex-col">
-                    <header className="flex h-14 items-center gap-4 border-0 bg-muted/40 px-4 lg:h-[60px] lg:px-6">
+                <div className="flex flex-col ">
+                    <header className="flex h-14 items-center gap-4 border-0 bg-muted/40 px-4 lg:h-[60px] lg:px-6 ">
                          <Sheet>
                             <SheetTrigger asChild>
                                 <Button variant="outline" 
@@ -83,7 +84,7 @@ export default async function DashboardLayout({children}:{children : ReactNode})
                                     </p>
                                     </div>
                             </SheetTitle>
-                                <nav className="grid gap-2 mt-10">
+                                <nav className="grid gap-2 mt-10  fixed">
                                     <DashboardLinks/>
                                 </nav>
                             </SheetContent>
@@ -112,13 +113,18 @@ export default async function DashboardLayout({children}:{children : ReactNode})
                         </div>
                     </header>
 
-                    <main className="dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-900 flex-wrap bg-gradient-to-b from-blue-100 via-white to-blue-100 overflow-y-auto h-full">
-  {children}
-</main>
+                    <main className="max-h-[90vh] h-full overflow-y-auto text-center 
+  bg-gradient-to-b from-blue-100 via-white to-blue-100 
+  dark:bg-gradient-to-b dark:from-gray-800 dark:via-gray-900 dark:to-gray-900 
+  dark:text-white 
+  p-8 rounded-xl shadow-lg transition-all duration-300 ease-in-out">
+                    {children}
+                    </main>
 
                 </div>
-
+            
             </div>
+            <Footer/>
         </>
     )
 }

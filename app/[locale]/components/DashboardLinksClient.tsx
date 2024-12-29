@@ -15,7 +15,7 @@ const iconMapping: Record<string, LucideIcon> = {
 type DashboardLink = {
   id: number;
   name: string;
-  href: "/dashboard" | "/dashboard/myskills" | "/dashboard/projects" | "/dashboard/contact";
+  href: "/dashboard" | "/dashboard/myskills" | "/dashboard/projects" | "/dashboard/certificates" | "/dashboard/contact";
   icon:string
 };
 

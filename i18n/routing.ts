@@ -25,6 +25,10 @@ export const routing = defineRouting({
       en:"/dashboard/myskills",
       cz:"/dashboard/myskills"
     },
+    "/dashboard/certificates":{
+      en:"/dashboard/certificates",
+      cz:"/dashboard/certificates"
+    },
     "/dashboard/projects":{
       en:"/dashboard/projects",
       cz:"/dashboard/projects"

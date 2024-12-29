@@ -17,7 +17,7 @@ export default async function CertificatesRoute() {
         <div className="flex flex-col md:flex-row gap-2">
       <Link href="https://coursera.org/share/9b89569b382c5880307c775af5ab931f"
             target="_blank" 
-            className="w-56 h-48 md:w-96 md:h-72 relative">
+            className="w-72 h-64 md:w-96 md:h-72 relative">
         <Image
           src={Frontend}
           fill      
@@ -27,7 +27,7 @@ export default async function CertificatesRoute() {
 
       <Link href="https://coursera.org/share/8ca14215a7cc8dd71df4bc0d8d8376dc"
              target="_blank" 
-             className="w-56 h-48 md:w-96 md:h-72 relative" >
+             className="w-72 h-64 md:w-96 md:h-72 relative" >
         <Image
           src={Backend}
           fill

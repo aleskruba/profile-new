@@ -26,6 +26,7 @@ export default async function CertificatesRoute() {
           src={Frontend}
           fill      
           alt="Frontend certificate"
+          className="hover:scale-y-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
       </Link>
 
@@ -36,6 +37,7 @@ export default async function CertificatesRoute() {
           src={Backend}
           fill
           alt="Backend certificate"
+          className="hover:scale-y-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  />
       </Link>
 

@@ -6,20 +6,18 @@ export default async function DashboardRoute() {
 
     return (
 <div className="text-left px-0 md:px-6  max-w-6xl mx-auto">
-<h1 className='
-  text-center pt-1 md:pt-4 pb-4 text-base md:text-xl 
-  font-semibold 
-  bg-gradient-to-r
-  from-black via-blue-800 to-black
-  text-transparent 
-  bg-clip-text
-  dark:from-gray-300 dark:via-blue-500 dark:to-gray-300
- border-b-2 dark:border-gray-200 border-gray-800
- mt-4
-'
->{t('el44')}
-    
-  </h1>
+<h1
+  className="
+    text-center pt-1 md:pt-4 pb-4 text-base md:text-xl 
+    font-mono
+    border-b-2 
+    dark:border-gray-200 border-gray-800
+    mt-4 
+    animate-slideIn
+  "
+>
+  {t('el44')}
+</h1>
 <h1 className="text-xl font-semibold mt-4 mb-6 dark:text-blue-300 text-blue-800">{t('el1')}</h1>
 
 <ul className="space-y-4">

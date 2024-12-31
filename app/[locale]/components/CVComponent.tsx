@@ -86,13 +86,20 @@ export default function CVComponent() {
     </form>
 
  
-           <div className="mt-8 flex justify-center w-full bg-red">
-      
+           <div className="mt-8 flex flex-col items-center justify-center gap-4 w-full bg-red">
+           {allowSubmit || note.length < 1 ?
+            <span className="text-base">
+                {lang === 'en' ?
+                    'Open the CV in a new window by clicking on the image below.' 
+                    :
+                    'Otevřete životopis v novém okně kliknutím na obrázek níže'}
+            </span>
+            : null }
            <button
         className={`${allowSubmit || note.length < 1 ? 'cursor-pointer opacity-100' : 'cursor-none opacity-10'}`}
         onClick={openTestPage}
         >
-        <Image src={Pdf} alt='Pdf' width={300} height={450}/>
+        <Image src={Pdf} alt='Pdf' width={300} height={450} className="hover:scale-105"/>
 
         </button>         
 

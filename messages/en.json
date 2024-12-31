@@ -94,7 +94,8 @@
 
   }, "Certificates":{
     "cert1":"In 2024, I simultaneously completed two courses from Meta: Front-End Developer and Back-End Developer, where I had the opportunity to review my skills and acquire new knowledge.",
-    "cv":"Below, you can view my CV, email it to yourself, or print it. You also have the option to add a note, which will appear at the top of the CV. You can enter this note in the field below."
+    "cv":"Below, you can view my CV.",
+     "cv1":"You can add notes to my CV, and when you download it, your note will be shown on CV."
 
   }
 

@@ -12,6 +12,8 @@ export async function generateMetadata({
   const resolvedParams = await params;
   const { locale } = resolvedParams;
 
+  console.log(locale)
+
   // Fetch the messages based on the locale
   const messages = await getMessages({ locale });
 

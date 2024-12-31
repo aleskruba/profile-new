@@ -6,6 +6,14 @@ import { notFound } from 'next/navigation';
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider"
 
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({
+    weight: '300',
+    subsets: ['latin'],
+  })
+
+
 export default async function LocaleLayout({
   children,
   params,
@@ -30,7 +38,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className={`text-center pb-4 ${poppins.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

@@ -12,10 +12,10 @@
   "boldLanguages": "Czech, English, Spanish",
   "mainText3": "I am an amateur full-stack developer focusing on web application development. I started programming a few years ago when I learned the basics of ",
   "boldTechnologies": "Python, JavaScript, CSS",
-  "mainText4": ", and gradually became familiar with libraries like ",
-  "boldFrameworks": "React.js",
+  "mainText4": ", and gradually became familiar with library ",
+  "boldFrameworks": "React js",
   "mainText5": " and frameworks like ",
-  "boldBackend": "Next.js, Express.js, Flask, Django",
+  "boldBackend": "Next js, Express js, Flask, Django",
   "mainText6": "Although I don’t have professional experience in web development yet, I am highly motivated and continuously learning new technologies and techniques. My goal is to grow in this field and utilize my skills to create high-quality web applications. I am looking for an opportunity to fully dedicate myself to web development and take my career to the next level.",
   "ViewPortfolio": "View portfolio"
 },
@@ -91,6 +91,10 @@
   "el43":"I am currently learning to test with Jest and React Testing Library",
   "el44": "I would be happy to create a project for you based on my skills listed below."
 
+
+  }, "Certificates":{
+    "cert1":"In 2024, I simultaneously completed two courses from Meta: Front-End Developer and Back-End Developer, where I had the opportunity to review my skills and acquire new knowledge.",
+    "cv":"Below, you can view my CV, email it to yourself, or print it. You also have the option to add a note, which will appear at the top of the CV. You can enter this note in the field below."
 
   }
 

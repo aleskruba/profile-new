@@ -11,6 +11,8 @@ import { getTranslations,getMessages } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Footer from "../components/Footer";
 
+
+
 export async function generateMetadata({
   params,
 }: {

@@ -7,14 +7,19 @@ import Link from 'next/link';
 
 export default async function CertificatesRoute() {
 
+
+
     const a = await getTranslations('AboutMe');
+    const t = await getTranslations('Certificates');
 
     return (
         <div className="text-left px-0 md:px-6  max-w-6xl mx-auto">
             <OfferComponent text={a('el44')}/>
         <div className='mt-4 flex flex-col items-center justify-center'>
 
-        <div className="flex flex-col md:flex-row gap-2">
+            <h1 className="text-center pb-4">{t('cert1')}</h1>
+
+        <div className="flex flex-col md:flex-row gap-4 md:gap-8">
       <Link href="https://coursera.org/share/9b89569b382c5880307c775af5ab931f"
             target="_blank" 
             className="w-72 h-64 md:w-96 md:h-72 relative">
@@ -36,6 +41,9 @@ export default async function CertificatesRoute() {
       </Link>
     </div>
 
+        <div className='mt-4 md:mt-8 flex flex-col'>
+    <h1 className="text-center pb-4" >{t('cv')}</h1>
+    </div>
 
         </div>
     

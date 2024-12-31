@@ -13,10 +13,10 @@
   "boldLanguages": "češtině, angličtině, španělštině",
   "mainText3": "Jsem amatérský full-stack programátor, který se zaměřuje na vývoj webových aplikací. Začal jsem se programování věnovat před několika lety, kdy jsem se naučil základy ",
   "boldTechnologies": "Pythonu, JavaScriptu, CSS",
-  "mainText4": ", a postupně se seznámil s knihovnami jako ",
-  "boldFrameworks": "React.js",
+  "mainText4": ", a postupně se seznámil s knihovnou ",
+  "boldFrameworks": "React js",
   "mainText5": " a frameworky jako ",
-  "boldBackend": "Next.js, Express.js, Flask, Django",
+  "boldBackend": "Next js, Express js, Flask, Django",
   "mainText6": "Ačkoli dosud nemám profesionální zkušenosti v oblasti webového vývoje, jsem velmi motivovaný a neustále se učím nové technologie a techniky. Mým cílem je rozvíjet se v této oblasti a využít své dovednosti pro tvorbu kvalitních webových aplikací. Hledám příležitost, jak se naplno věnovat vývoji webových aplikací a posunout svou kariéru na další úroveň.",
   "ViewPortfolio": "Zobrazit portfolio"
 }
@@ -92,6 +92,9 @@
     "el42": "Práce se systémy autentizace uživatelů, včetně přihlášení, odhlášení a správy relací.",
     "el43": "Aktuálně se učím testovat s Jest a React Testing Library.",
     "el44": "Rád pro vás vytvořím projekt na základě mých dovedností uvedených níže."
+}, "Certificates":{
+  "cert1":"V roce 2024 jsem simultánně absolvoval dva kurzy od Meta: Front-End Developer a Back-End Developer, kde jsem měl možnost prověřit své dovednosti a zároveň získat nové znalosti",
+  "cv":"Níže si můžete prohlédnout můj životopis, poslat si ho e-mailem nebo vytisknout. Také máte možnost přidat poznámku, která se zobrazí v horní části životopisu. Tuto poznámku můžete napsat do pole níže."
 }
 
 

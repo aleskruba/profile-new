@@ -52,7 +52,7 @@ export default function CVComponent() {
               value={note}
               onChange={onChangeHandler}
               maxLength={400}
-              className="  w-[65vw] md:[w-50vw] p-2 border-b-2 dark:bg-gray-600 dark:text-white border-gray-300 focus:border-blue-500 focus:outline-none placeholder-gray-400 text-gray-700"
+              className="  w-[50vw]  p-2 border-b-2 dark:bg-gray-600 dark:text-white border-gray-300 focus:border-blue-500 focus:outline-none placeholder-gray-400 text-gray-700"
               placeholder={lang === 'en' ? `max 400 characters` : `max 400 znaků`}
             />
 

@@ -38,13 +38,13 @@ export default function CVComponent() {
   };
 
   return (
-    <div className="p-6 flex justify-center">
+    <div className="flex justify-center">
       <div>
         <form onSubmit={onSubmitHandler}>
            <div className="flex items-center justify-center gap-2 mb-2 ">
           
     
-            <div className="flex flex-col">
+            <div className="flex flex-col pt-4">
             <input
               id="note"
               type="text"
@@ -52,7 +52,7 @@ export default function CVComponent() {
               value={note}
               onChange={onChangeHandler}
               maxLength={400}
-              className="  w-[60vw] p-2 border-b-2 dark:bg-gray-600 dark:text-white border-gray-300 focus:border-blue-500 focus:outline-none placeholder-gray-400 text-gray-700"
+              className="  w-[65vw] md:[w-50vw] p-2 border-b-2 dark:bg-gray-600 dark:text-white border-gray-300 focus:border-blue-500 focus:outline-none placeholder-gray-400 text-gray-700"
               placeholder={lang === 'en' ? `max 400 characters` : `max 400 znaků`}
             />
 
@@ -88,12 +88,12 @@ export default function CVComponent() {
  
            <div className="mt-8 flex flex-col items-center justify-center gap-4 w-full bg-red">
            {allowSubmit || note.length < 1 ?
-            <span className="text-base">
+            <h1 className="text-base text-center">
                 {lang === 'en' ?
                     'Open the CV in a new window by clicking on the image below.' 
                     :
                     'Otevřete životopis v novém okně kliknutím na obrázek níže'}
-            </span>
+            </h1>
             : null }
            <button
         className={`${allowSubmit || note.length < 1 ? 'cursor-pointer opacity-100' : 'cursor-none opacity-10'}`}

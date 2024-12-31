@@ -44,7 +44,7 @@ export default async function CertificatesRoute() {
       
     </div>
    
-        <div className='mt-6 md:mt-12 flex flex-col'>
+        <div className='mt-6 md:mt-12 flex flex-col '>
     <h1 className="text-center font-bold pb-4" >{t('cv')}</h1>
 
     <h5 className="text-base text-center">{t('cv1')}</h5>

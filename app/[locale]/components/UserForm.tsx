@@ -68,23 +68,52 @@ function UserForm() {
     // Return true if no errors
     return Object.keys(newErrors).length === 0;
   };
-
-  const handleSubmitEmail = (event: React.FormEvent<HTMLFormElement>): void => {
+  const handleSubmitEmail = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
     event.preventDefault();
-
+  
     // Only reset form if validation is successful
     if (validate()) {
-      console.log(user);  // Log the valid user data
-
+      console.log(user); // Log the valid user data
+  
       // Simulate a successful email submission
       const isFormValid = user.email && user.name && user.message;
       if (isFormValid) {
-        setSuccessMessage(lang == 'en' ? 'Your message has been sent successfully!' : 'Vaše zpráva byla úspěšně odeslána!');
-        setUser(initialUser); // Clear form after submission
-        setTimeout(() => setSuccessMessage(null), 3000); // Remove success message after 3 seconds
+        try {
+          // Make the API call to send the email
+          const response = await fetch("/api", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name: user.name,
+              email: user.email,
+              message: user.message,
+            }),
+          });
+  
+          const result = await response.json();
+          console.log(result);
+  
+          if (result.success) {
+            console.log("Email sent successfully:", result.info);
+            setSuccessMessage(
+              lang === "en"
+                ? "Your message has been sent successfully!"
+                : "Vaše zpráva byla úspěšně odeslána!"
+            );
+            setUser(initialUser); // Clear form after submission
+            setTimeout(() => setSuccessMessage(null), 3000); // Remove success message after 3 seconds
+          } else {
+            console.error("Error sending email:", result.error);
+            alert(lang === "en" ? "Error sending email." : "Chyba při odesílání zprávy.");
+          }
+        } catch (error) {
+          console.error("Unexpected error:", error);
+          alert(lang === "en" ? "An unexpected error occurred." : "Došlo k neočekávané chybě.");
+        }
       }
     }
   };
+  
 
   return (
     <>

@@ -14,6 +14,8 @@ export default async function DashboardRoute() {
 
     const t = await getTranslations('Contact');
 
+
+
   return (
     <div className="text-left px-0 md:px-6 max-w-6xl mx-auto">
  
@@ -29,8 +31,8 @@ export default async function DashboardRoute() {
         <div className="flex flex-col space-y-4 mb-8">
 
 
-            <div className="flex md:flex-col flex-row  md:gap-2 justify-between md:justify-start items-center md:items-start">
-            <div className="flex items-center text-lg">
+            <div className="flex w-full gap-4 justify-between  items-center ">
+               <div className="flex items-center text-lg">
                 <Image src={Man} alt="name" className="w-14 h-14 mr-2 rounded-full object-cover"  />
                 <span className="font-bold text-2xl">Aleš Kruba</span>
                 </div>

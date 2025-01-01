@@ -31,12 +31,23 @@ export default async function DashboardRoute() {
         <div className="flex flex-col space-y-4 mb-8">
 
 
-            <div className="flex w-full gap-4 justify-between  items-center ">
+          
                <div className="flex items-center text-lg">
                 <Image src={Man} alt="name" className="w-14 h-14 mr-2 rounded-full object-cover"  />
                 <span className="font-bold text-2xl">Aleš Kruba</span>
                 </div>
-                <div className="flex space-x-2 md:pb-6">
+                         
+
+            <div className="flex items-center">
+            <Image src={Email} alt="email" className="w-6 h-6 mr-2" />
+            <span className="text-lg" >aleskruba@dokram.com</span>
+            </div>
+            <div className="flex items-center">
+            <Image src={Phone} alt="phone" className="w-6 h-6 mr-2" />
+            <span className="text-lg">+420 728 949 062</span>
+            </div>
+
+            <div className="flex gap-4 pt-4">
                     <Link href="https://github.com/aleskruba"   target="_blank" >
                     <Github className="w-5 h-5 cursor-pointer" />
                     </Link>
@@ -44,16 +55,6 @@ export default async function DashboardRoute() {
                     <Linkedin className="w-5 h-5 cursor-pointer" />
                 </Link>
                 </div>
-            </div>
-
-            <div className="flex items-center">
-            <Image src={Email} alt="email" className="w-6 h-6 mr-2" />
-            <span className="text-lg" >aleskruba@seznam.cz</span>
-            </div>
-            <div className="flex items-center">
-            <Image src={Phone} alt="phone" className="w-6 h-6 mr-2" />
-            <span className="text-lg">+420 728 949 062</span>
-            </div>
         </div>
 
 

@@ -86,9 +86,9 @@ export const styles = StyleSheet.create({
     marginTop:'10px'
   },
   leftTextContainerTitleTextInnerred:{
-    color:'red',
-    fontSize:'12px',
-    fontStyle:'italic',
+      fontFamily:'Roboto',
+      fontSize:'10px',
+
   },
 
 

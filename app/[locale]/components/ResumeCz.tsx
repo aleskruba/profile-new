@@ -47,21 +47,21 @@ export const MyCVCZ = () => {
             <View style={styles.leftInfoContainer}>
 
                      <View style={styles.leftInfoContainerInner}>
-                      <Image src='./phonered.png' style={styles.icons} />
+                      <Image src='/phonered.png' style={styles.icons} />
                         <Text style={styles.leftTextContainerTitleTextInner } > +420 728 949 062</Text>
                      </View>
 
                      <View style={styles.leftInfoContainerInner}>
-                      <Image src='./emailwhite.png' style={styles.icons} />
+                      <Image src='/emailwhite.png' style={styles.icons} />
                         <Text style={styles.leftTextContainerTitleTextInner } >aleskruba@seznam.cz</Text>
                      </View>
 
                      <View style={styles.leftInfoContainerInner}>
-                      <Image src='./redpoint2.png' style={styles.icons} />
+                      <Image src='/redpoint2.png' style={styles.icons} />
                         <Text style={styles.leftTextContainerTitleTextInner } >Brno, Česká republika</Text>
                      </View>
                      <View style={styles.leftInfoContainerInner}>
-                      <Image src='./globe.png' style={styles.icons} />
+                      <Image src='/globe.png' style={styles.icons} />
                         <Text style={styles.leftTextContainerTitleTextInner } >www.dokram.com</Text>
                      </View>
         
@@ -123,7 +123,7 @@ export const MyCVCZ = () => {
                 <Text style={styles.leftTextContainerTitleText} >JAZYKY</Text>
               </View>
               <View style={styles.leftInfoContainer}>
-              <Text style={styles.leftTextContainerTitleTextInner } >- čeština</Text>
+              <Text style={styles.leftTextContainerTitleTextInner } >- Čeština</Text>
               <Text style={styles.leftTextContainerTitleTextInner } >- Angličtina</Text>
               <Text style={styles.leftTextContainerTitleTextInner } >- Španělština</Text>
               </View>

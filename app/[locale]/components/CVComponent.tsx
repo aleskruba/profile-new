@@ -99,7 +99,7 @@ export default function CVComponent() {
         className={`${allowSubmit || note.length < 1 ? 'cursor-pointer opacity-100' : 'cursor-none opacity-10'}`}
         onClick={openTestPage}
         >
-        <Image src={Pdf} alt='Pdf' width={300} height={450} className="hover:scale-105"/>
+        <Image src={Pdf} alt='Pdf' width={300} height={450}       className="hover:scale-y-105"/>
 
         </button>         
 

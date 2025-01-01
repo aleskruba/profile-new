@@ -97,8 +97,12 @@
   "cv":"Níže si můžete prohlédnout můj životopis.",
   "cv1":"K mému životopisu můžete přidávat poznámky, když si jej stáhnete, vaše poznámka se zobrazí v životopisu."
   
+},
+"Contact": {
+  "el1": "Těším se na vaši zprávu! Ať už máte otázku, nápad na projekt, nebo chcete jen pozdravit, neváhejte mě kontaktovat pomocí formuláře níže.",
+  "el2": "Bydlím v krásném městě Brně, v  Českě republice. Pokud budete někdy poblíž, klidně se zastavte a pozdravte!",
+  "el3":"Tady je moje město, vítejte!"
 }
-
 
 
     }

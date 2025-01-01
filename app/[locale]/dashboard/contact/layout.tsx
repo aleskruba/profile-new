@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import { getTranslations,getMessages } from 'next-intl/server';
+import { getMessages } from 'next-intl/server';
 import type { Metadata } from 'next';
 
 export async function generateMetadata({
@@ -28,7 +28,7 @@ export default async function ContactLayout({children}:{children : ReactNode}){
   return (
     <div > 
          
-         <main className="bg-yellow-500 flex ">
+         <main className="overflow-y-auto h-full">
             {children}
     </main>
 </div>

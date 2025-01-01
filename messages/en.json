@@ -97,6 +97,12 @@
     "cv":"Below, you can view my CV.",
      "cv1":"You can add notes to my CV, and when you download it, your note will be shown on CV."
 
+  },
+    "Contact":{
+    "el1":"I’d love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to contact me using the form below.",
+    "el2":"I’m based in the beautiful city of Brno, Czech Republic. If you're ever nearby, feel free to say hi!",
+     "el3":"Welcome to my home base!"
+
   }
 
     }

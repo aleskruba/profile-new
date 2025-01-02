@@ -40,14 +40,16 @@ export default async function DashboardRoute() {
 
             <div className="flex items-center">
             <Image src={Email} alt="email" className="w-6 h-6 mr-2" />
-            <span className="text-lg" >aleskruba@dokram.com</span>
+            <Link href="mailto:aleskruba@dokram.com" className="text-lg hover:text-blue-500">
+              aleskruba@dokram.com
+            </Link>
             </div>
             <div className="flex items-center">
             <Image src={Phone} alt="phone" className="w-6 h-6 mr-2" />
             <span className="text-lg">+420 728 949 062</span>
             </div>
 
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-4 w-full border-t-2 dark:border-gray-200 border-gray-800">
                     <Link href="https://github.com/aleskruba"   target="_blank" >
                     <Github className="w-5 h-5 cursor-pointer" />
                     </Link>

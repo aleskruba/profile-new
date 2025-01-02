@@ -8,10 +8,10 @@
   "welcome1": "Jmenuji se ",
   "welcome2": "a toto je moje osobní portfolio.",
   "mainText1": "Je mi 46 let a žiji v ",
-  "boldILive": "Brně, Česká republika.",
+  "boldILive": "Brně v České republice.",
   "mainText2": " Komunikuji v ",
   "boldLanguages": "češtině, angličtině, španělštině",
-  "mainText3": "Jsem amatérský full-stack programátor, který se zaměřuje na vývoj webových aplikací. Začal jsem se programování věnovat před několika lety, kdy jsem se naučil základy ",
+  "mainText3": "Jsem amatérský full-stack web developer. Začal jsem se programování věnovat před několika lety, kdy jsem se naučil základy ",
   "boldTechnologies": "Pythonu, JavaScriptu, CSS",
   "mainText4": ", a postupně se seznámil s knihovnou ",
   "boldFrameworks": "React js",
@@ -100,7 +100,7 @@
 },
 "Contact": {
   "el1": "Těším se na vaši zprávu! Ať už máte otázku, nápad na projekt, nebo chcete jen pozdravit, neváhejte mě kontaktovat pomocí formuláře níže.",
-  "el2": "Bydlím v krásném městě Brně, v  Českě republice. Pokud budete někdy poblíž, klidně se zastavte a pozdravte!",
+  "el2": "Bydlím v krásném městě Brně, v  Českě republice. Pokud budete někdy poblíž, klidně se zastavte ",
   "el3":"Tady je moje město, vítejte!"
 }
 

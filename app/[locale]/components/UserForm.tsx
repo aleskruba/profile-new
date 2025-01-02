@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { ChangeEvent, useState } from "react";
 import { usePathname } from "next/navigation";
+import { SubmitButton } from "./SubmitButton";
 
 interface UserProps {
   email: string;
@@ -29,6 +30,7 @@ function UserForm() {
   const [user, setUser] = useState<UserProps>(initialUser);
   const [errors, setErrors] = useState<Errors>({});
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
+  const [pending, setPending] = useState(false);
 
   const pathname = usePathname();
   const lang = pathname.split("/")[1];
@@ -68,52 +70,45 @@ function UserForm() {
     // Return true if no errors
     return Object.keys(newErrors).length === 0;
   };
-  const handleSubmitEmail = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
-    event.preventDefault();
-  
-    // Only reset form if validation is successful
-    if (validate()) {
-      console.log(user); // Log the valid user data
-  
-      // Simulate a successful email submission
-      const isFormValid = user.email && user.name && user.message;
-      if (isFormValid) {
-        try {
-          // Make the API call to send the email
-          const response = await fetch("/api", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              name: user.name,
-              email: user.email,
-              message: user.message,
-            }),
-          });
-  
-          const result = await response.json();
-          console.log(result);
-  
-          if (result.success) {
-            console.log("Email sent successfully:", result.info);
-            setSuccessMessage(
-              lang === "en"
-                ? "Your message has been sent successfully!"
-                : "Vaše zpráva byla úspěšně odeslána!"
-            );
-            setUser(initialUser); // Clear form after submission
-            setTimeout(() => setSuccessMessage(null), 3000); // Remove success message after 3 seconds
-          } else {
-            console.error("Error sending email:", result.error);
-            alert(lang === "en" ? "Error sending email." : "Chyba při odesílání zprávy.");
-          }
-        } catch (error) {
-          console.error("Unexpected error:", error);
-          alert(lang === "en" ? "An unexpected error occurred." : "Došlo k neočekávané chybě.");
-        }
+
+
+const handleSubmitEmail = async (event: React.FormEvent<HTMLFormElement>): Promise<void> => {
+  event.preventDefault();
+
+  if (validate()) {
+    setPending(true); // Start pending state
+    try {
+      const response = await fetch("/api", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: user.name,
+          email: user.email,
+          message: user.message,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSuccessMessage(
+          lang === "en"
+            ? "Your message has been sent successfully!"
+            : "Vaše zpráva byla úspěšně odeslána!"
+        );
+        setUser(initialUser); // Reset form
+        setTimeout(() => setSuccessMessage(null), 3000);
+      } else {
+        alert(lang === "en" ? "Error sending email." : "Chyba při odesílání zprávy.");
       }
+    } catch (error) {
+      console.error("Unexpected error:", error);
+      alert(lang === "en" ? "An unexpected error occurred." : "Došlo k neočekávané chybě.");
+    } finally {
+      setPending(false); // End pending state
     }
-  };
-  
+  }
+};
+
 
   return (
     <>
@@ -165,9 +160,11 @@ function UserForm() {
           {errors.message && <span className="text-xs font-bold dark:text-red-400 text-red-700">{errors.message}</span>}
         </div>
 
-        <Button type="submit" className="w-full text-gray-200 bg-gray-900 hover:bg-gray-700">
+        <SubmitButton text={lang == "en" ? "Send Message" : "Odešli zprávu"} pending={pending} />
+
+     {/*    <Button type="submit" className="w-full text-gray-200 bg-gray-900 hover:bg-gray-700">
           {lang == 'en' ? 'Send Message' : 'Odešli zprávu'}
-        </Button>
+        </Button> */}
       </form>
     </>
   );

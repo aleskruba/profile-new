@@ -96,7 +96,7 @@ export default async function SkillsRoute() {
                 <li>{t('el23')}</li>
             </ul>
 
-            <h2 className="text-lg font-semibold mb-2">{t('el23')}</h2>
+            <h2 className="text-lg font-semibold mb-2">{t('el25')}</h2>
             <ul className="list-disc list-inside mb-4">
                 <li>Context API</li>    
                 <li>Optimistic Updates implemented with TanStack Query</li>
@@ -157,7 +157,7 @@ export default async function SkillsRoute() {
         <li>{t('el27')}(One-Time Password)</li>
     </ul>
 
-    <h2 className="text-lg font-semibold mb-2">{t('el23')}</h2>
+    <h2 className="text-lg font-semibold mb-2">{t('el25')}</h2>
     <ul className="list-disc list-inside mb-4">
         <li>State Management: Context API for global state management</li>
         <li>Optimistic Updates: Implemented using React's `useState` for smoother user experience</li>

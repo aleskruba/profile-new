@@ -12,7 +12,7 @@ export default async function SkillsRoute() {
 
         <>
         <div className="text-left">
-          <div className="max-w-6xl mx-auto ">
+        <div className="text-left px-0 md:px-6  max-w-6xl mx-auto">
 
     <p className="mb-6 font-bold text-lg text-center">
  {t('el1')}

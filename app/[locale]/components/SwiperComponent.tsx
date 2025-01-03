@@ -19,7 +19,7 @@ export const SwiperComponent = () => {
     }}
     speed={5000}
     modules={[Autoplay]}
-    className="max-w-[80%]"
+    className="w-[350px] md:w-[400px] lg:w-[550px] xl:w-[600px] 2xl:w-[700px]"
   >
     {SkillData.map((skill, index) => (
       <SwiperSlide key={index}>

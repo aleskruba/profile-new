@@ -19,7 +19,7 @@ export default async function DashboardRoute() {
 >
   {t('el44')}
 </h1>
-<div className='mt-2'>
+<div className='w-full mt-2'>
 <SwiperComponent/>
 </div>
 <h1 className="text-xl font-semibold mt-4 mb-6 dark:text-blue-300 text-blue-800">{t('el1')}</h1>
@@ -27,7 +27,7 @@ export default async function DashboardRoute() {
 <ul className="space-y-4">
   <li className="text-base font-medium">
   <span className='font-bold  '>JavaScript / TypeScript</span>
-    <ul className="list-disc mt-2 text-sm pl-6 space-y-2">
+    <ul className="list-disc mt-1 text-sm pl-6 space-y-2">
       <li>{t('el2')}</li>
       <li>{t('el3')}</li>
       <li>{t('el4')}</li>
@@ -37,7 +37,7 @@ export default async function DashboardRoute() {
   </li>
   <li className="text-base font-medium">
      <span className='font-bold '>React js</span>
-    <ul className="list-disc mt-2 text-sm pl-6 space-y-2">
+    <ul className="list-disc mt-1 text-sm pl-6 space-y-2">
       <li>{t('el8')}</li>
       <li>{t('el9')}</li>
       <li>{t('el10')}</li>
@@ -49,7 +49,7 @@ export default async function DashboardRoute() {
   </li> 
   <li className="text-base font-medium">
      <span className='font-bold'>Next js</span>
-    <ul className="list-disc mt-2 text-sm pl-6 space-y-2">
+    <ul className="list-disc mt-1 text-sm pl-6 space-y-2">
       <li>{t('el14')}</li>
       <li>{t('el16')}</li>
       <li>{t('el17')}</li>
@@ -76,7 +76,7 @@ export default async function DashboardRoute() {
 <ul className="space-y-4">
   <li className="text-base font-medium">
     <span className="font-bold">Express js</span>
-    <ul className="list-disc text-sm pl-6 space-y-2">
+    <ul className="list-disc mt-1  text-sm pl-6 space-y-2">
       <li>{t('el23')}</li>
       <li>{t('el24')}</li>
       <li>{t('el25')}</li>
@@ -86,7 +86,7 @@ export default async function DashboardRoute() {
   </li>
   <li className="text-base font-medium">
     <span className="font-bold">{t('el32')}</span>
-    <ul className="list-disc text-sm pl-6 space-y-2">
+    <ul className="list-disc mt-1  text-sm pl-6 space-y-2">
       <li>{t('el28')}</li>
       <li>{t('el29')}</li>
       <li>{t('el30')}</li>

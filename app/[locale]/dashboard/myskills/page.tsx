@@ -26,8 +26,8 @@ export default async function DashboardRoute() {
 
 <ul className="space-y-4">
   <li className="text-base font-medium">
-  <span className='font-bold '>JavaScript / TypeScript</span>
-    <ul className="list-disc text-sm pl-6 space-y-2">
+  <span className='font-bold  '>JavaScript / TypeScript</span>
+    <ul className="list-disc mt-2 text-sm pl-6 space-y-2">
       <li>{t('el2')}</li>
       <li>{t('el3')}</li>
       <li>{t('el4')}</li>
@@ -37,7 +37,7 @@ export default async function DashboardRoute() {
   </li>
   <li className="text-base font-medium">
      <span className='font-bold '>React js</span>
-    <ul className="list-disc text-sm pl-6 space-y-2">
+    <ul className="list-disc mt-2 text-sm pl-6 space-y-2">
       <li>{t('el8')}</li>
       <li>{t('el9')}</li>
       <li>{t('el10')}</li>
@@ -49,7 +49,7 @@ export default async function DashboardRoute() {
   </li> 
   <li className="text-base font-medium">
      <span className='font-bold'>Next js</span>
-    <ul className="list-disc text-sm pl-6 space-y-2">
+    <ul className="list-disc mt-2 text-sm pl-6 space-y-2">
       <li>{t('el14')}</li>
       <li>{t('el16')}</li>
       <li>{t('el17')}</li>

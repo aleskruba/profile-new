@@ -5,7 +5,7 @@ import React from 'react';
 
 function ProjectCards() {
     return (
-<div className='pt-4 h-full flex flex-wrap gap-4 overflow-hidden items-center justify-center bg-center bg-cover bg-gradient-to-t from-black to-very-dark-purple'>
+<div className='pt-4 text-black h-full flex flex-wrap gap-4 overflow-hidden items-center justify-center bg-center bg-cover bg-gradient-to-t from-black to-very-dark-purple'>
         {/* max-h-[80vh] sets the maximum height of the container */}
         {/* overflow-y-auto enables vertical scrolling when necessary */}
         {Projects.map((project, index) => (

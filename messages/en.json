@@ -103,6 +103,39 @@
     "el2":"I’m based in the beautiful city of Brno, Czech Republic. If you're ever nearby, feel free to say hi!",
      "el3":"Welcome to my home base!"
 
-  }
+  },
+  "MyProjects": {
+  "el1":"During last year I created an app called \"TravelTips\", to help travelers connect and share their experiences. It has two main parts:",
+  "el2":"A part of the App  where logged-in users can choose a country and leave real-time comments about it.",
+  "el3": "Logged in users can : ",
+  "el4": "reply to comments and give likes.",
+  "el5": "delete their own messages if they want.",
+  "el6": "People who aren’t logged in can only read the messages, but they can’t reply or give them likes.",
+  "el7": "TravelMates",
+  "el8": "A part of the App  where users can find travel buddies for their trips.",
+  "el9": "Create a Trip: Add details like destination, dates, and preferences.",
+  "el10": "Comment and Reply: Engage in real-time discussions about trips.",
+  "el11": "Manage Content: Update or delete their trips and messages .",
+  "el12": "Filter Options: Easily find trips based on specific criteria, such as destination, travel dates, or other preferences.",
+  "el13": "Other Feature:",
+  "el14": "Sign-In Options:",
+  "el15": "You can log in with email and password or use Google account.",
+  "el16": "There’s also a “forgot password” feature if needed.",
+   "el17": "User Profiles:",
+  "el18": "Users can update their profiles and upload a profile picture.",
+    "el19": "I created this app in three versions:",
+  "el20": "The latest version is deployed on render.com.",
+  "el21": "Please note that since I am using the free version of Render for deployment, there may be a slight delay of around 30 seconds when starting the servers after running the app. This is because the free tier typically requires the servers to 'wake up' when they are accessed for the first time after a period of inactivity.",
+ "el22": "Real-time messaging using Socket.io",
+   "el23": "Forgot password feature with password reset link sent by mail.",
+    "el24": "Backend Features:",
+  "el25": "Frontend Features:",
+    "el26": "Previous version",
+      "el27": "Forgot Password functionality with OTP",
+        "el28": "First Version: Using PHP and Vanilla JS",
+        "el29": "Below you can find other projects that I created in the past"
+
+
+}
 
     }

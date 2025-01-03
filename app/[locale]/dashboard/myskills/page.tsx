@@ -1,4 +1,5 @@
 import {  getTranslations } from 'next-intl/server';
+import { SwiperComponent } from '../../components/SwiperComponent';
 
 export default async function DashboardRoute() {
 
@@ -18,6 +19,9 @@ export default async function DashboardRoute() {
 >
   {t('el44')}
 </h1>
+<div className='mt-2'>
+<SwiperComponent/>
+</div>
 <h1 className="text-xl font-semibold mt-4 mb-6 dark:text-blue-300 text-blue-800">{t('el1')}</h1>
 
 <ul className="space-y-4">

@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { getMessages, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
+import { SwiperComponent } from "../../components/SwiperComponent";
 
 export async function generateMetadata({
   params,
@@ -28,6 +29,7 @@ export default async function SkillsLayout({children}:{children : ReactNode}){
     <div > 
          
          <main className="overflow-y-auto h-full">
+
                     {children}
          </main>
 

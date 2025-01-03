@@ -102,7 +102,43 @@
   "el1": "Těším se na vaši zprávu! Ať už máte otázku, nápad na projekt, nebo chcete jen pozdravit, neváhejte mě kontaktovat pomocí formuláře níže.",
   "el2": "Bydlím v krásném městě Brně, v  Českě republice. Pokud budete někdy poblíž, klidně se zastavte ",
   "el3":"Tady je moje město, vítejte!"
-}
+},
 
+"MyProjects": {
+  "el1": "Během minulého roku jsem vytvořil aplikaci nazvanou \"TravelTips\", která cestovatelům pomáhá spojit se a sdílet své zkušenosti. Má dvě hlavní části:",
+  "el2":"Část aplikace, kde si přihlášení uživatelé mohou vybrat zemi a zanechat k ní komentáře v reálném čase.",
+  "el3": "Přihlášení uživatelé mohou:",
+  "el4": "odpovídat na komentáře a dávat lajky.",
+  "el5": "smazat své vlastní zprávy, pokud chtějí.",
+  "el6": "Lidé, kteří nejsou přihlášeni, mohou zprávy pouze číst, ale nemohou na ně odpovídat ani dávat lajky",
+  "el7": "Spolucesty",
+  "el8": "Část aplikace, kde uživatelé mohou najít kamarády na cesty.",
+  "el9": "Vytvořit výlet: Přidat podrobnosti, jako je cíl, termín a preference.",
+  "el10": "Komentáře a odpovědi: Zapojit se do diskusí o cestách v reálném čase.",
+  "el11": "Správa obsahu: Aktualizovat nebo smazat své výlety a zprávy .",
+  "el12": "Možnosti filtrování: Snadno vyhledat výlety podle konkrétních kritérií, jako je destinace, data cesty nebo osobní preference.",
+  "el13": "Další funkce: ",
+  "el14": "Možnosti přihlášení:",
+  "el15": "Možnost přihlášení pomocí e-mailu a hesla nebo použít Google účet.",
+  "el16": "Pokud je potřeba, je k dispozici funkce „zapomenuté heslo“.",
+  "el17": "Uživatelské profily:",
+  "el18": "Uživatelé si mohou aktualizovat své profily a nahrát profilovou fotografii.",
+  "el19": "Tuto aplikaci jsem vytvořil ve třech verzích:",
+  "el20": "Poslední verze je nasazena na render.com." ,
+  "el21": "Vezměte prosím na vědomí, že protože pro nasazení používám bezplatnou verzi Render, může při spuštění serverů po zapnutí aplikace dojít k mírnému zpoždění přibližně 30 sekund. Důvodem je to, že bezplatná verze obvykle vyžaduje, aby se servery po určité době nečinnosti „probudily“ při prvním přístupu.",
+  "el22": "Zprávy v reálném čase pomocí Socket.io",
+    "el23": "Funkce zapomenutého hesla s odkazem pro obnovení hesla zaslaný poštou.",
+      "el24": "Backendové funkce:",
+  "el25": "Frontendové funkce:",
+    "el26": "Předchozí verze",
+     "el27": "Funkce zapomenuté heslo s OTP",
+     "el28": "První verze: Použití PHP a Vanilla JS",
+     "el29": "Níže naleznete další projekty, které jsem vytvořil v minulosti / bez češtiny"
+
+
+
+
+
+}
 
     }

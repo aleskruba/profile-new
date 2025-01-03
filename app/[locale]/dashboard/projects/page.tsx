@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink,ArrowBigRight } from 'lucide-react';
+
+
 import ProjectCards from "../../components/ProjectCards";
 
 export default async function SkillsRoute() {
@@ -64,6 +66,19 @@ export default async function SkillsRoute() {
     <div className="border-t-2 mt-4 dark:border-gray-300 border-gray-700">
         <p className="text-xl font-bold mb-4 mt-6">I created this app in three versions:</p>
         <h1 className=" font-bold mb-3 underline">Last version deployed on render.com</h1>
+        
+        <div className="flex items-center relative pb-2 "> 
+        <div className="text-blue-800 dark:text-blue-200 absolute top-2 left-0 animate-ping">
+          <ArrowBigRight  />
+        </div>
+        <div className="ml-8 flex items-center  pt-2 gap-2 dark:text-green-700 dark:hover:dark:text-gray-900 hover:text-green-600 transition-colors duration-300 bg-green-200 px-4 py-1">
+          <ExternalLink className="w-6 h-6 text-gray-800 hover:text-gray-600 bg-gray-300transition-colors duration-300 bg-gray-300" />
+          <Link href="https://travelapp-itpa.onrender.com" passHref target="_blank" className="text-base font-medium">Visit the app
+  
+          </Link>
+        </div>
+        </div>
+
         <div className="pl-4  border-b-2  dark:border-gray-300 border-gray-700">
             
             <p className="text-md font-semibold mb-2">Technology Stack:</p>
@@ -94,25 +109,30 @@ export default async function SkillsRoute() {
             <div className="flex flex-col gap-2 pt-2">
             <div className="flex  w-64 space-x-2 dark:text-blue-700 dark:hover:dark:text-gray-900 hover:text-blue-600 transition-colors duration-300 bg-gray-200 px-2 py-1">
             <Github className="w-6 h-6 text-gray-800 hover:text-gray-600 bg-gray-300 transition-colors duration-300" />
-        <Link href="https://github.com/your-repository" passHref target="_blank"  className="text-base font-medium">
+        <Link href="https://github.com/aleskruba/travelapp"  target="_blank"  className="text-base font-medium">
         Frontend Code on GitHub
         </Link>
         
       </div>
       <div className="flex  w-64 space-x-2 dark:text-blue-700 dark:hover:dark:text-gray-900 hover:text-blue-600 transition-colors duration-300 bg-gray-200 px-2 py-1">
             <Github className="w-6 h-6 text-gray-800 hover:text-gray-600 bg-gray-300 transition-colors duration-300" />
-        <Link href="https://github.com/your-repository" passHref target="_blank"  className="text-base font-medium">
-        Backend Code on GitHub
+        <Link href="https://github.com/aleskruba/travelapp-server"  target="_blank"  className="text-base font-medium">
+        Backend Server on GitHub
         </Link>
         
       </div>
-      <div className="flex items-center w-64 pt-2 dark:text-green-700 dark:hover:dark:text-gray-900 hover:text-green-600 transition-colors duration-300 bg-green-200 px-2 py-1">
-        <ExternalLink className="w-6 h-6 text-gray-800 hover:text-gray-600 bg-gray-300transition-colors duration-300 bg-gray-300" />
-        <Link href="https://yourwebsite.com" passHref target="_blank" className="text-base font-medium">HTML Link
- 
+      <div className="flex  w-64 space-x-2 dark:text-blue-700 dark:hover:dark:text-gray-900 hover:text-blue-600 transition-colors duration-300 bg-gray-200 px-2 py-1">
+            <Github className="w-6 h-6 text-gray-800 hover:text-gray-600 bg-gray-300 transition-colors duration-300" />
+        <Link href="https://github.com/aleskruba/travelappsocket.git"  target="_blank"  className="text-base font-medium">
+        Socket Io Server on GitHub
         </Link>
+        
       </div>
+  
     </div>
+
+
+
 
     <span className="text-xs italic font-bold">Please note that since I am using the free version of Render for deployment, there may be a slight delay of around 20 seconds when starting the servers after running the app. This is because the free tier typically requires the servers to 'wake up' when they are accessed for the first time after a period of inactivity. </span>
 
@@ -147,22 +167,32 @@ export default async function SkillsRoute() {
         <li>Real-Time Messaging: Integrated real-time communication using Socket.io</li>
     </ul>
 
-    <div className="flex flex-col gap-2 pt-2">
+ 
+            <div className="flex flex-col gap-2 pt-2">
             <div className="flex  w-64 space-x-2 dark:text-blue-700 dark:hover:dark:text-gray-900 hover:text-blue-600 transition-colors duration-300 bg-gray-200 px-2 py-1">
             <Github className="w-6 h-6 text-gray-800 hover:text-gray-600 bg-gray-300 transition-colors duration-300" />
-        <Link href="https://github.com/your-repository" passHref target="_blank"  className="text-base font-medium">
+        <Link href="https://github.com/aleskruba/travel.git"  target="_blank"  className="text-base font-medium">
         Frontend Code on GitHub
         </Link>
         
       </div>
       <div className="flex  w-64 space-x-2 dark:text-blue-700 dark:hover:dark:text-gray-900 hover:text-blue-600 transition-colors duration-300 bg-gray-200 px-2 py-1">
             <Github className="w-6 h-6 text-gray-800 hover:text-gray-600 bg-gray-300 transition-colors duration-300" />
-        <Link href="https://github.com/your-repository" passHref target="_blank"  className="text-base font-medium">
-        Backend Code on GitHub
+        <Link href="https://github.com/aleskruba/travelBackend.git"  target="_blank"  className="text-base font-medium">
+        Backend Server on GitHub
         </Link>
         
       </div>
-          </div>
+      <div className="flex  w-64 space-x-2 dark:text-blue-700 dark:hover:dark:text-gray-900 hover:text-blue-600 transition-colors duration-300 bg-gray-200 px-2 py-1">
+            <Github className="w-6 h-6 text-gray-800 hover:text-gray-600 bg-gray-300 transition-colors duration-300" />
+        <Link href="https://github.com/aleskruba/travelSocket.git"  target="_blank"  className="text-base font-medium">
+        Socket Io Server on GitHub
+        </Link>
+        
+      </div>
+  
+    </div>
+
 
    
 </div>
@@ -188,7 +218,7 @@ export default async function SkillsRoute() {
     </ul>
     <div className="flex items-center w-44 space-x-2 dark:text-blue-700 dark:hover:dark:text-gray-900 hover:text-blue-600 transition-colors duration-300 bg-gray-200 px-2 py-1">
     <Github className="w-6 h-6 text-gray-800 hover:text-gray-600 bg-gray-300 transition-colors duration-300" />
-        <Link href="https://github.com/your-repository" passHref target="_blank"  className="text-base font-medium">
+        <Link href="https://github.com/aleskruba/travel-app-PHP.git"  target="_blank"  className="text-base font-medium">
        Code on GitHub
         </Link>
       </div>

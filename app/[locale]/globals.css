@@ -21,6 +21,16 @@ body {
   transform: rotateY(180deg);
 }
 
+.flip-card-front {
+  background-size: cover; /* Default for larger screens */
+}
+
+@media (max-width: 768px) { /* Adjust the width as needed for your breakpoint */
+  .flip-card-front {
+    background-size: 100%;
+    background-repeat: no-repeat;/* Change for smaller screens */
+  }
+}
 
 
 @layer base {

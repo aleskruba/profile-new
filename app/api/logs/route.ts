@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 /* export const revalidate = true */
 
-export async function GET(req: NextRequest,res:NextResponse) {
+export async function GET(req: NextRequest) {
   try {
     // Fetch logs sorted from newest to oldest
     const [rows] = await pool.query('SELECT * FROM porfoliologs ORDER BY timestamp DESC');

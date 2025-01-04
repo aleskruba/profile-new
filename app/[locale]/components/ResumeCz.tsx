@@ -37,7 +37,7 @@ export const MyCVCZ = () => {
              <View style={styles.leftContainer}>
 
             <View style={styles.avatarView}>
-                <Image src="/man.jpg" style={styles.avatar} />
+                <Image src="/man.png" style={styles.avatar} />
             </View>
 
              <View style={styles.leftTextContainer}>

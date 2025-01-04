@@ -3,6 +3,8 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import {Link} from '@/i18n/routing';
 import DropDownSettingComponents from "./components/DropDownSettingComponents";
 import type { Metadata } from 'next';
+import Logo from "@/public/man1.png"
+import Image from "next/image";
 
 export async function generateMetadata({
   params,
@@ -48,10 +50,13 @@ export default async function Home() {
                                                    /> 
      </nav>
      <div className="flex flex-col items-start justify-center h-auto md:min-h-[75vh] pt-10 md:pt-0  md:mx-28">
+  
+  <div className="flex flex-col items-center justify-center md:justify-between w-full md:w-3/4 md:flex-row">
   <h1 className="text-2xl md:text-4xl text-center font-extrabold text-gray-800 dark:text-gray-200 mb-3 md:md-6">
     {t('title')}
   </h1>
-  
+  <Image src={Logo} alt="That´s me " className="size-56 md:size-64 text-blue-600 rounded-full"/>
+  </div>
   <p className="text-base md:text-lg pt-3 md:pt-2 text-gray-600 dark:text-gray-300 mb-3 md:md-6 text-justify ">
     {t('welcome1')} <span className="font-bold text-blue-700 dark:text-blue-300">Aleš Kruba</span> {t('welcome2')}
   </p>
@@ -77,7 +82,7 @@ export default async function Home() {
     {t('mainText6')}
   </p>
   </div>
-  <div className="flex justify-center md:pt-12 pt-6 ">
+  <div className="flex justify-center md:pt-12 pt-6 pb-16 ">
   <Button className="px-6 py-3 text-base md:text-lg font-semibold rounded-md bg-blue-500 text-white hover:bg-blue-600 transition-all duration-300 ease-in-out">
     <Link href="/dashboard">{t('ViewPortfolio')}</Link>
   </Button>

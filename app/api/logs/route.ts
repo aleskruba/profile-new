@@ -1,7 +1,7 @@
 import pool from '@/app/utils/db';
 import { NextRequest, NextResponse } from 'next/server';
 
-export const revalidate = true
+/* export const revalidate = true */
 
 export async function GET(req: NextRequest,res:NextResponse) {
   try {

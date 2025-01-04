@@ -17,7 +17,7 @@ export default async function ServerComponent({ req }:any) {
       const { ip } = await ipResponse.json();
 
       // Step 2: Fetch geolocation data and ISP based on the IP using ipapi
-      const geoResponse = await fetch(`https://ipapi.co/${ip}/json/`);
+      const geoResponse = await fetch(`https://ipapi.co/${ip2}/json/`);
       const geoData = await geoResponse.json();
       const address = geoData.city
         ? `${geoData.city}, ${geoData.region}, ${geoData.country_name}`

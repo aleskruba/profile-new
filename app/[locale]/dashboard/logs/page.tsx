@@ -6,7 +6,9 @@ import pool from '@/app/utils/db';
 // Define the Log type
 interface Log {
   id: number;
+  isp:string;
   ipAddress: string;
+  ip2:string;
   address: string;
   timestamp: string; // Assuming timestamp is stored as a string in ISO format, you can change it to `Date` if needed
 }
@@ -54,6 +56,12 @@ export default function ShowLogs() {
               </p>
               <p>
                 <strong>Address:</strong> {log.address}
+              </p>
+              <p>
+                <strong>ISP:</strong> {log.isp}
+              </p>
+              <p>
+                <strong>IP2:</strong> {log.ip2}
               </p>
               <p>
                 <strong>Timestamp:</strong> {new Date(log.timestamp).toLocaleString()}

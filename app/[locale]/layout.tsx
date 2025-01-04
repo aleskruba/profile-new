@@ -7,6 +7,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider"
 
 import { Poppins } from 'next/font/google'
+import ServerComponent from './components/Servercomponent';
 
 const poppins = Poppins({
     weight: '300',
@@ -44,7 +45,7 @@ export default async function LocaleLayout({
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
-        >
+        ><ServerComponent/>
           <NextIntlClientProvider messages={messages}>
             {children}
           </NextIntlClientProvider>

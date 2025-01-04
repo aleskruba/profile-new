@@ -47,7 +47,7 @@ export default function ShowLogs() {
       <h2 className="text-xl font-bold mb-4">Portfolio Logs</h2>
 
       {/* Display logs */}
-      <div className="bg-gray-100 p-4 rounded shadow">
+      <div className="p-4 rounded shadow">
         {currentLogs.length > 0 ? (
           currentLogs.map((log) => (
             <div key={log.id} className="mb-4">

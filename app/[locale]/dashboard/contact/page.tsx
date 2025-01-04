@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Man from "@/public/man.jpg"
+import Man from "@/public/man.png"
 import Email from "@/public/emailwhite.png"
 import Phone from "@/public/phonered.png"
 import {  Linkedin } from 'lucide-react';

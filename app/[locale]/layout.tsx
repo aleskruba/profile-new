@@ -61,7 +61,7 @@ export default async function LocaleLayout({
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
-        ><ServerComponent/>
+        >{/* <ServerComponent/> */}
           <NextIntlClientProvider messages={messages}>
             {children}
           </NextIntlClientProvider>

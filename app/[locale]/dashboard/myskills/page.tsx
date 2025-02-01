@@ -99,6 +99,13 @@ export default async function DashboardRoute() {
 
 <ul className="space-y-4">
 
+<li className="text-base font-medium">
+    <span className='font-bold'>React Native / Expo</span>
+    <ul className="list-disc text-sm pl-6 space-y-2">
+  {/*     <li>{t('el34')}</li> */}
+    </ul>
+  </li>
+
   <li className="text-base font-medium">
     <span className='font-bold'>Cloudinary</span>
     <ul className="list-disc text-sm pl-6 space-y-2">

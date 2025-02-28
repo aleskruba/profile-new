@@ -53,7 +53,7 @@ export default async function DashboardRoute() {
                     <Link href="https://github.com/aleskruba"   target="_blank" >
                     <Github className="w-5 h-5 cursor-pointer" />
                     </Link>
-                    <Link href="https://github.com/aleskruba"   target="_blank" >
+                    <Link href="https://www.linkedin.com/in/ale%C5%A1-kruba-5a3980282/"   target="_blank" >
                     <Linkedin className="w-5 h-5 cursor-pointer" />
                 </Link>
                 </div>

@@ -41,6 +41,8 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+
+
       <Head>
   <title>Aleš Kruba - Full Stack Web Developer</title>
   <meta name="description" content="Portfolio of Aleš Kruba, a full-stack web developer specializing in frontend and backend development using JavaScript, React, Next.js, and Express.js." />
@@ -52,7 +54,14 @@ export default async function LocaleLayout({
   <meta property="og:description" content="Explore the portfolio of Aleš Kruba, showcasing my skills in frontend and backend web development, including React, Next.js, Express.js, and more. Projects and experiences displayed in a dynamic, user-friendly format." />
   <meta property="og:url" content="https://dokram.com" />
   <meta property="og:image" content="https://dokram.com/man1.png" />
-  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFG536RB19"></script>
+<script>     {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LFG536RB19');      `}
+</script>
 
 </Head>
       <body suppressHydrationWarning className={`text-center pb-4 ${poppins.className}`}>

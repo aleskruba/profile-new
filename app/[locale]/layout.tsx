@@ -42,7 +42,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
 
-{/* <head>
+<head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFG536RB19"></script>
 <script>     {`
   window.dataLayer = window.dataLayer || [];
@@ -56,7 +56,7 @@ export default async function LocaleLayout({
 
 
 
-</head> */}
+</head>
 
       <Head>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFG536RB19"></script>

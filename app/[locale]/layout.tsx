@@ -7,7 +7,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider"
 import Head from 'next/head';
 
-
+import Script from "next/script"; // Importujeme Script z next/script
 import { Poppins } from 'next/font/google'
 import ServerComponent from './components/Servercomponent';
 
@@ -43,14 +43,14 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
 
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LFG536RB19"></script>
-<script>     {`
+<Script async src="https://www.googletagmanager.com/gtag/js?id=G-LFG536RB19"></Script>
+<Script>     {`
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-LFG536RB19');      `}
-</script>
+</Script>
 
 
 
@@ -59,14 +59,6 @@ export default async function LocaleLayout({
 </head>
 
       <Head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFG536RB19"></script>
-<script>     {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LFG536RB19');      `}
-</script>
 
   <title>Aleš Kruba - Full Stack Web Developer</title>
   <meta name="description" content="Portfolio of Aleš Kruba, a full-stack web developer specializing in frontend and backend development using JavaScript, React, Next.js, and Express.js." />

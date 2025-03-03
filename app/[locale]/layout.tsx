@@ -51,6 +51,9 @@ export default async function LocaleLayout({
 
   gtag('config', 'G-LFG536RB19');      `}
 </script>
+
+
+
 </head>
 
       <Head>

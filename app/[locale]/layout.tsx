@@ -42,6 +42,16 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
 
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LFG536RB19"></script>
+<script>     {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LFG536RB19');      `}
+</script>
+</head>
 
       <Head>
   <title>Aleš Kruba - Full Stack Web Developer</title>

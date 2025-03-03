@@ -59,6 +59,15 @@ export default async function LocaleLayout({
 </head> */}
 
       <Head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFG536RB19"></script>
+<script>     {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LFG536RB19');      `}
+</script>
+
   <title>Aleš Kruba - Full Stack Web Developer</title>
   <meta name="description" content="Portfolio of Aleš Kruba, a full-stack web developer specializing in frontend and backend development using JavaScript, React, Next.js, and Express.js." />
   <meta name="author" content="Aleš Kruba" />
@@ -70,14 +79,7 @@ export default async function LocaleLayout({
   <meta property="og:url" content="https://dokram.com" />
   <meta property="og:image" content="https://dokram.com/man1.png" />
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFG536RB19"></script>
-<script>     {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-LFG536RB19');      `}
-</script>
 </Head>
       <body suppressHydrationWarning className={`text-center pb-4 ${poppins.className}`}>
         <ThemeProvider
